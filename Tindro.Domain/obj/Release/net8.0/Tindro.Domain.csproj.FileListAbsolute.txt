@@ -1,0 +1,11 @@
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\bin\Release\net8.0\Tindro.Domain.deps.json
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\bin\Release\net8.0\Tindro.Domain.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\bin\Release\net8.0\Tindro.Domain.pdb
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Release\net8.0\Tindro.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Release\net8.0\Tindro.Domain.AssemblyInfoInputs.cache
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Release\net8.0\Tindro.Domain.AssemblyInfo.cs
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Release\net8.0\Tindro.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Release\net8.0\Tindro.Domain.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Release\net8.0\refint\Tindro.Domain.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Release\net8.0\Tindro.Domain.pdb
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Release\net8.0\ref\Tindro.Domain.dll

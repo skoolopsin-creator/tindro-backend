@@ -1,0 +1,1028 @@
+ Volume in drive C has no label.
+ Volume Serial Number is B496-44AB
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend
+
+01/12/2026  07:43 PM    <DIR>          .
+01/12/2026  07:43 PM    <DIR>          ..
+01/12/2026  07:43 PM                 0 out.txt
+01/12/2026  06:28 PM    <DIR>          Tindro.Api
+01/04/2026  02:17 AM    <DIR>          Tindro.Application
+01/05/2026  01:44 PM             4,348 Tindro.Backend.sln
+01/12/2026  05:37 PM    <DIR>          Tindro.BackgroundJobs
+01/04/2026  02:33 AM    <DIR>          Tindro.Domain
+01/12/2026  07:19 PM    <DIR>          Tindro.Infrastructure
+01/04/2026  02:41 AM    <DIR>          Tindro.Shared
+               2 File(s)          4,348 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs
+
+01/12/2026  07:27 PM    <DIR>          ProjectEvaluation
+01/04/2026  02:09 AM    <DIR>          sd
+01/12/2026  07:30 PM    <DIR>          Tindro.Backend
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\ProjectEvaluation
+
+01/12/2026  07:27 PM    <DIR>          .
+01/12/2026  07:27 PM    <DIR>          ..
+01/12/2026  07:27 PM             2,604 tindro.backend.metadata.v8.bin
+01/12/2026  07:27 PM           464,304 tindro.backend.projects.v8.bin
+01/12/2026  07:27 PM           186,098 tindro.backend.strings.v8.bin
+               3 File(s)        653,006 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\sd
+
+01/04/2026  02:09 AM    <DIR>          .
+01/04/2026  02:09 AM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\Tindro.Backend
+
+01/12/2026  07:30 PM    <DIR>          .
+01/12/2026  07:30 PM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          config
+01/12/2026  07:30 PM    <DIR>          copilot-chat
+01/03/2026  08:41 PM    <DIR>          DesignTimeBuild
+01/12/2026  07:30 PM    <DIR>          FileContentIndex
+01/12/2026  07:27 PM    <DIR>          v17
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\Tindro.Backend\config
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+07/02/2024  10:46 PM            86,045 applicationhost.config
+               1 File(s)         86,045 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\Tindro.Backend\copilot-chat
+
+01/12/2026  07:30 PM    <DIR>          .
+01/12/2026  07:30 PM    <DIR>          ..
+01/12/2026  07:30 PM    <DIR>          de2e251f
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\Tindro.Backend\copilot-chat\de2e251f
+
+01/12/2026  07:30 PM    <DIR>          .
+01/12/2026  07:30 PM    <DIR>          ..
+01/12/2026  07:30 PM    <DIR>          sessions
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\Tindro.Backend\copilot-chat\de2e251f\sessions
+
+01/12/2026  07:30 PM    <DIR>          .
+01/12/2026  07:30 PM    <DIR>          ..
+01/12/2026  07:39 PM            17,661 f9123b42-c398-4316-97db-aee3d23d25cf
+               1 File(s)         17,661 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\Tindro.Backend\DesignTimeBuild
+
+01/03/2026  08:41 PM    <DIR>          .
+01/03/2026  08:41 PM    <DIR>          ..
+01/12/2026  07:27 PM           240,284 .dtbcache.v2
+               1 File(s)        240,284 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\Tindro.Backend\FileContentIndex
+
+01/12/2026  07:30 PM    <DIR>          .
+01/12/2026  07:30 PM    <DIR>          ..
+01/12/2026  07:30 PM            30,124 057d8ec0-8a36-47b1-834c-e4aaba75d57d.vsidx
+01/12/2026  07:30 PM            30,437 18f5ece4-7001-4f57-9c82-2f9480187ce6.vsidx
+01/12/2026  07:30 PM            28,449 306270ae-dede-43b7-82f8-e37efe96b652.vsidx
+01/12/2026  07:30 PM            28,709 9dc485e0-14af-4108-99be-036c4ec2c7a8.vsidx
+01/12/2026  07:30 PM            28,549 f6642a82-a586-4a37-a1d2-87fca0fc7df2.vsidx
+               5 File(s)        146,268 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\.vs\Tindro.Backend\v17
+
+01/12/2026  07:27 PM    <DIR>          .
+01/12/2026  07:27 PM    <DIR>          ..
+01/12/2026  07:27 PM               874 .futdcache.v2
+01/12/2026  07:27 PM            74,761 DocumentLayout.json
+               2 File(s)         75,635 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api
+
+01/12/2026  06:28 PM    <DIR>          .
+01/12/2026  06:28 PM    <DIR>          ..
+01/03/2026  08:40 PM               127 appsettings.Development.json
+01/10/2026  07:38 PM               302 appsettings.json
+01/03/2026  08:40 PM    <DIR>          bin
+01/12/2026  06:35 PM    <DIR>          Controllers
+01/12/2026  07:05 PM    <DIR>          Filters
+01/12/2026  06:28 PM    <DIR>          Hubs
+01/12/2026  06:28 PM    <DIR>          Middleware
+01/12/2026  07:03 PM    <DIR>          obj
+01/12/2026  06:28 PM               735 Program.cs
+01/03/2026  08:40 PM    <DIR>          Properties
+01/12/2026  06:35 PM               787 Tindro.Api.csproj
+01/10/2026  07:37 PM               447 Tindro.Api.csproj.user
+01/03/2026  08:40 PM               133 Tindro.Api.http
+01/03/2026  08:40 PM               290 WeatherForecast.cs
+               7 File(s)          2,821 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\bin
+
+01/03/2026  08:40 PM    <DIR>          .
+01/03/2026  08:40 PM    <DIR>          ..
+01/03/2026  08:40 PM    <DIR>          Debug
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\bin\Debug
+
+01/03/2026  08:40 PM    <DIR>          .
+01/03/2026  08:40 PM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\bin\Debug\net8.0
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/03/2026  08:40 PM               127 appsettings.Development.json
+01/03/2026  08:40 PM               151 appsettings.json
+05/05/2025  04:30 PM           520,192 FluentValidation.dll
+02/23/2023  12:18 AM             6,656 MediatR.Contracts.dll
+10/24/2025  08:57 PM            86,528 MediatR.dll
+11/01/2023  06:38 AM            51,992 Microsoft.AspNetCore.Authentication.JwtBearer.dll
+05/20/2024  05:24 AM            34,848 Microsoft.EntityFrameworkCore.Abstractions.dll
+05/20/2024  05:25 AM         2,533,312 Microsoft.EntityFrameworkCore.dll
+03/20/2024  05:05 AM         1,991,720 Microsoft.EntityFrameworkCore.Relational.dll
+09/17/2024  04:39 AM            63,768 Microsoft.Extensions.DependencyInjection.Abstractions.dll
+09/17/2024  04:40 AM            30,480 Microsoft.Extensions.Diagnostics.Abstractions.dll
+09/17/2024  04:40 AM            51,472 Microsoft.Extensions.Hosting.Abstractions.dll
+09/17/2024  04:39 AM            65,320 Microsoft.Extensions.Logging.Abstractions.dll
+10/22/2024  05:25 AM            22,840 Microsoft.Extensions.ObjectPool.dll
+01/18/2024  08:35 AM            64,776 Microsoft.Extensions.Options.dll
+08/16/2025  03:22 AM            19,528 Microsoft.IdentityModel.Abstractions.dll
+08/16/2025  03:22 AM           171,552 Microsoft.IdentityModel.JsonWebTokens.dll
+08/16/2025  03:21 AM            36,896 Microsoft.IdentityModel.Logging.dll
+10/17/2023  07:27 AM            40,488 Microsoft.IdentityModel.Protocols.dll
+10/17/2023  07:36 AM           119,840 Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+08/16/2025  03:21 AM           385,568 Microsoft.IdentityModel.Tokens.dll
+08/30/2020  01:44 AM           173,960 Microsoft.OpenApi.dll
+03/24/2018  11:14 PM           656,384 Newtonsoft.Json.dll
+05/09/2024  07:15 PM         1,404,928 Npgsql.dll
+05/11/2024  09:38 PM           622,592 Npgsql.EntityFrameworkCore.PostgreSQL.dll
+05/04/2023  08:06 PM           167,424 Pipelines.Sockets.Unofficial.dll
+03/07/2025  05:37 AM           916,992 StackExchange.Redis.dll
+07/19/2022  08:51 PM            15,360 Swashbuckle.AspNetCore.Swagger.dll
+07/19/2022  08:51 PM            96,768 Swashbuckle.AspNetCore.SwaggerGen.dll
+07/19/2022  08:51 PM         3,416,576 Swashbuckle.AspNetCore.SwaggerUI.dll
+10/17/2023  07:22 AM            81,952 System.IdentityModel.Tokens.Jwt.dll
+11/13/2024  03:17 AM            55,600 System.Net.WebSockets.WebSocketProtocol.dll
+01/10/2026  06:52 PM            45,030 Tindro.Api.deps.json
+01/10/2026  06:52 PM             9,216 Tindro.Api.dll
+01/10/2026  06:52 PM           142,848 Tindro.Api.exe
+01/10/2026  06:52 PM            22,956 Tindro.Api.pdb
+01/10/2026  06:52 PM               485 Tindro.Api.runtimeconfig.json
+01/10/2026  06:52 PM             4,608 Tindro.Application.dll
+01/10/2026  06:52 PM            11,308 Tindro.Application.pdb
+01/10/2026  06:52 PM             4,096 Tindro.Domain.dll
+01/10/2026  06:52 PM            10,380 Tindro.Domain.pdb
+01/10/2026  06:52 PM             6,144 Tindro.Infrastructure.dll
+01/10/2026  06:52 PM            13,224 Tindro.Infrastructure.pdb
+01/10/2026  06:52 PM             4,096 Tindro.Shared.dll
+01/10/2026  06:52 PM            10,380 Tindro.Shared.pdb
+              45 File(s)     14,191,361 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\Controllers
+
+01/12/2026  06:35 PM    <DIR>          .
+01/12/2026  06:35 PM    <DIR>          ..
+01/10/2026  07:38 PM             1,195 AuthController.cs
+01/12/2026  06:35 PM             2,139 FeedController.cs
+01/10/2026  07:45 PM             1,793 MatchController.cs
+01/12/2026  05:45 PM             1,057 ModerationController.cs
+01/12/2026  05:41 PM             1,388 PaymentController.cs
+01/12/2026  06:05 PM               881 PhotoController.cs
+01/12/2026  04:13 PM             1,176 StoryController.cs
+01/12/2026  06:28 PM             1,890 UsersController.cs
+01/03/2026  08:40 PM             1,077 WeatherForecastController.cs
+               9 File(s)         12,596 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\Filters
+
+01/12/2026  07:05 PM    <DIR>          .
+01/12/2026  07:05 PM    <DIR>          ..
+01/12/2026  07:05 PM               525 ApiKeyFilter.cs
+01/12/2026  06:35 PM               426 ModelStateFilter.cs
+01/12/2026  07:05 PM               913 ValidationFilter.cs
+               3 File(s)          1,864 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\Hubs
+
+01/12/2026  06:28 PM    <DIR>          .
+01/12/2026  06:28 PM    <DIR>          ..
+01/12/2026  06:28 PM             1,306 ChatHub.cs
+               1 File(s)          1,306 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\Middleware
+
+01/12/2026  06:28 PM    <DIR>          .
+01/12/2026  06:28 PM    <DIR>          ..
+01/12/2026  06:14 PM               765 ExceptionMiddleware.cs
+01/12/2026  06:28 PM               786 RateLimitMiddleware.cs
+               2 File(s)          1,551 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj
+
+01/12/2026  07:03 PM    <DIR>          .
+01/12/2026  07:03 PM    <DIR>          ..
+01/03/2026  08:40 PM    <DIR>          Debug
+01/12/2026  07:03 PM           126,773 project.assets.json
+01/12/2026  07:03 PM             9,493 project.nuget.cache
+01/12/2026  07:03 PM            16,116 Tindro.Api.csproj.nuget.dgspec.json
+01/05/2026  01:24 PM             2,531 Tindro.Api.csproj.nuget.g.props
+01/05/2026  01:27 PM             1,155 Tindro.Api.csproj.nuget.g.targets
+               5 File(s)        156,068 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug
+
+01/03/2026  08:40 PM    <DIR>          .
+01/03/2026  08:40 PM    <DIR>          ..
+01/12/2026  05:33 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug\net8.0
+
+01/12/2026  05:33 PM    <DIR>          .
+01/12/2026  05:33 PM    <DIR>          ..
+01/03/2026  08:40 PM               198 .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+01/10/2026  06:52 PM           142,848 apphost.exe
+01/10/2026  06:52 PM    <DIR>          ref
+01/10/2026  06:52 PM    <DIR>          refint
+01/10/2026  06:52 PM    <DIR>          staticwebassets
+01/10/2026  06:52 PM               281 staticwebassets.build.json
+01/03/2026  08:40 PM             1,003 Tindro.Api.AssemblyInfo.cs
+01/03/2026  08:40 PM                66 Tindro.Api.AssemblyInfoInputs.cache
+01/12/2026  07:03 PM            41,867 Tindro.Api.assets.cache
+01/12/2026  05:33 PM            20,841 Tindro.Api.csproj.AssemblyReference.cache
+01/10/2026  06:52 PM                66 Tindro.Api.csproj.CoreCompileInputs.cache
+01/10/2026  06:52 PM             7,010 Tindro.Api.csproj.FileListAbsolute.txt
+01/10/2026  06:52 PM                 0 Tindro.Api.csproj.Up2Date
+01/10/2026  06:52 PM             9,216 Tindro.Api.dll
+01/03/2026  08:40 PM               947 Tindro.Api.GeneratedMSBuildEditorConfig.editorconfig
+01/10/2026  06:52 PM                66 Tindro.Api.genruntimeconfig.cache
+01/03/2026  08:40 PM               770 Tindro.Api.GlobalUsings.g.cs
+01/10/2026  06:52 PM                 0 Tindro.Api.MvcApplicationPartsAssemblyInfo.cache
+01/10/2026  06:52 PM               625 Tindro.Api.MvcApplicationPartsAssemblyInfo.cs
+01/10/2026  06:52 PM            22,956 Tindro.Api.pdb
+              17 File(s)        248,760 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug\net8.0\ref
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             6,656 Tindro.Api.dll
+               1 File(s)          6,656 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug\net8.0\refint
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             6,656 Tindro.Api.dll
+               1 File(s)          6,656 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug\net8.0\staticwebassets
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM                91 msbuild.build.Tindro.Api.props
+01/10/2026  06:52 PM                74 msbuild.buildMultiTargeting.Tindro.Api.props
+01/10/2026  06:52 PM                88 msbuild.buildTransitive.Tindro.Api.props
+               3 File(s)            253 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\Properties
+
+01/03/2026  08:40 PM    <DIR>          .
+01/03/2026  08:40 PM    <DIR>          ..
+01/03/2026  08:40 PM             1,124 launchSettings.json
+               1 File(s)          1,124 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application
+
+01/04/2026  02:17 AM    <DIR>          .
+01/04/2026  02:17 AM    <DIR>          ..
+01/04/2026  02:25 AM    <DIR>          Auth
+01/04/2026  01:43 AM    <DIR>          bin
+01/12/2026  05:57 PM    <DIR>          Chat
+01/04/2026  01:43 AM                80 Class1.cs
+01/04/2026  02:17 AM    <DIR>          Common
+01/04/2026  02:17 AM    <DIR>          Match
+01/04/2026  02:17 AM    <DIR>          Moderation
+01/10/2026  06:52 PM    <DIR>          obj
+01/04/2026  02:17 AM    <DIR>          Payments
+01/04/2026  02:17 AM    <DIR>          Stories
+01/12/2026  05:58 PM               628 Tindro.Application.csproj
+01/12/2026  06:28 PM    <DIR>          Users
+               2 File(s)            708 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Auth
+
+01/04/2026  02:25 AM    <DIR>          .
+01/04/2026  02:25 AM    <DIR>          ..
+01/04/2026  02:25 AM               208 Class1.cs
+               1 File(s)            208 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin
+
+01/04/2026  01:43 AM    <DIR>          .
+01/04/2026  01:43 AM    <DIR>          ..
+01/04/2026  01:43 AM    <DIR>          Debug
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin\Debug
+
+01/04/2026  01:43 AM    <DIR>          .
+01/04/2026  01:43 AM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin\Debug\net8.0
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             7,277 Tindro.Application.deps.json
+01/10/2026  06:52 PM             4,608 Tindro.Application.dll
+01/10/2026  06:52 PM            11,308 Tindro.Application.pdb
+01/10/2026  06:52 PM             4,096 Tindro.Domain.dll
+01/10/2026  06:52 PM            10,380 Tindro.Domain.pdb
+01/10/2026  06:52 PM             4,096 Tindro.Shared.dll
+01/10/2026  06:52 PM            10,380 Tindro.Shared.pdb
+               7 File(s)         52,145 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Chat
+
+01/12/2026  05:57 PM    <DIR>          .
+01/12/2026  05:57 PM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Common
+
+01/04/2026  02:17 AM    <DIR>          .
+01/04/2026  02:17 AM    <DIR>          ..
+01/12/2026  07:19 PM    <DIR>          Behaviors
+01/12/2026  07:19 PM    <DIR>          Exceptions
+01/12/2026  07:05 PM    <DIR>          Interfaces
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Common\Behaviors
+
+01/12/2026  07:19 PM    <DIR>          .
+01/12/2026  07:19 PM    <DIR>          ..
+01/12/2026  07:19 PM               724 LoggingBehavior.cs
+01/12/2026  07:19 PM               896 ValidationBehavior.cs
+               2 File(s)          1,620 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Common\Exceptions
+
+01/12/2026  07:19 PM    <DIR>          .
+01/12/2026  07:19 PM    <DIR>          ..
+01/12/2026  07:19 PM               115 DomainException.cs
+01/12/2026  07:19 PM               130 ForbiddenException.cs
+01/12/2026  07:19 PM               161 NotFoundException.cs
+               3 File(s)            406 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Common\Interfaces
+
+01/12/2026  07:05 PM    <DIR>          .
+01/12/2026  07:05 PM    <DIR>          ..
+01/10/2026  07:38 PM               303 IJwtTokenService.cs
+01/10/2026  06:50 PM               325 IRedisService.cs
+01/12/2026  07:05 PM               177 IUserRepository.cs
+               3 File(s)            805 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Match
+
+01/04/2026  02:17 AM    <DIR>          .
+01/04/2026  02:17 AM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Moderation
+
+01/04/2026  02:17 AM    <DIR>          .
+01/04/2026  02:17 AM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/04/2026  01:43 AM    <DIR>          Debug
+01/05/2026  01:32 PM            23,234 project.assets.json
+01/10/2026  06:52 PM             1,457 project.nuget.cache
+01/10/2026  06:52 PM             8,169 Tindro.Application.csproj.nuget.dgspec.json
+01/04/2026  01:43 AM             1,305 Tindro.Application.csproj.nuget.g.props
+01/05/2026  01:31 PM               581 Tindro.Application.csproj.nuget.g.targets
+               5 File(s)         34,746 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Debug
+
+01/04/2026  01:43 AM    <DIR>          .
+01/04/2026  01:43 AM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Debug\net8.0
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/04/2026  01:43 AM               198 .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+01/10/2026  06:52 PM    <DIR>          ref
+01/10/2026  06:52 PM    <DIR>          refint
+01/10/2026  06:52 PM                 0 Tindro.A.71C772B3.Up2Date
+01/04/2026  01:43 AM             1,027 Tindro.Application.AssemblyInfo.cs
+01/04/2026  01:43 AM                66 Tindro.Application.AssemblyInfoInputs.cache
+01/05/2026  01:32 PM             6,193 Tindro.Application.assets.cache
+01/10/2026  06:52 PM             6,582 Tindro.Application.csproj.AssemblyReference.cache
+01/10/2026  06:52 PM                66 Tindro.Application.csproj.CoreCompileInputs.cache
+01/10/2026  06:52 PM             1,893 Tindro.Application.csproj.FileListAbsolute.txt
+01/10/2026  06:52 PM             4,608 Tindro.Application.dll
+01/04/2026  01:43 AM               619 Tindro.Application.GeneratedMSBuildEditorConfig.editorconfig
+01/04/2026  01:43 AM               295 Tindro.Application.GlobalUsings.g.cs
+01/10/2026  06:52 PM            11,308 Tindro.Application.pdb
+              12 File(s)         32,855 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Debug\net8.0\ref
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             5,120 Tindro.Application.dll
+               1 File(s)          5,120 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Debug\net8.0\refint
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             5,120 Tindro.Application.dll
+               1 File(s)          5,120 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Payments
+
+01/04/2026  02:17 AM    <DIR>          .
+01/04/2026  02:17 AM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Stories
+
+01/04/2026  02:17 AM    <DIR>          .
+01/04/2026  02:17 AM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\Users
+
+01/12/2026  06:28 PM    <DIR>          .
+01/12/2026  06:28 PM    <DIR>          ..
+01/12/2026  06:28 PM               467 CreateProfileDto.cs
+               1 File(s)            467 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs
+
+01/12/2026  05:37 PM    <DIR>          .
+01/12/2026  05:37 PM    <DIR>          ..
+01/04/2026  01:47 AM    <DIR>          bin
+01/04/2026  01:47 AM                83 Class1.cs
+01/04/2026  02:59 AM               210 CleanupJob.cs
+01/04/2026  02:58 AM               215 MatchScoringJob.cs
+01/12/2026  07:03 PM    <DIR>          obj
+01/12/2026  05:37 PM               405 StoryExpiryJob.cs
+01/05/2026  01:44 PM               425 Tindro.BackgroundJobs.csproj
+               5 File(s)          1,338 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\bin
+
+01/04/2026  01:47 AM    <DIR>          .
+01/04/2026  01:47 AM    <DIR>          ..
+01/04/2026  01:47 AM    <DIR>          Debug
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\bin\Debug
+
+01/04/2026  01:47 AM    <DIR>          .
+01/04/2026  01:47 AM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\bin\Debug\net8.0
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             4,608 Tindro.Application.dll
+01/10/2026  06:52 PM            11,308 Tindro.Application.pdb
+01/10/2026  06:52 PM            19,881 Tindro.BackgroundJobs.deps.json
+01/10/2026  06:52 PM             4,096 Tindro.BackgroundJobs.dll
+01/10/2026  06:52 PM            12,328 Tindro.BackgroundJobs.pdb
+01/10/2026  06:52 PM             4,096 Tindro.Domain.dll
+01/10/2026  06:52 PM            10,380 Tindro.Domain.pdb
+01/10/2026  06:52 PM             6,144 Tindro.Infrastructure.dll
+01/10/2026  06:52 PM            13,224 Tindro.Infrastructure.pdb
+01/10/2026  06:52 PM             4,096 Tindro.Shared.dll
+01/10/2026  06:52 PM            10,380 Tindro.Shared.pdb
+              11 File(s)        100,541 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj
+
+01/12/2026  07:03 PM    <DIR>          .
+01/12/2026  07:03 PM    <DIR>          ..
+01/04/2026  01:47 AM    <DIR>          Debug
+01/12/2026  07:03 PM            55,783 project.assets.json
+01/12/2026  07:03 PM             3,945 project.nuget.cache
+01/12/2026  07:03 PM            15,420 Tindro.BackgroundJobs.csproj.nuget.dgspec.json
+01/05/2026  01:24 PM             1,674 Tindro.BackgroundJobs.csproj.nuget.g.props
+01/05/2026  01:27 PM               857 Tindro.BackgroundJobs.csproj.nuget.g.targets
+               5 File(s)         77,679 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj\Debug
+
+01/04/2026  01:47 AM    <DIR>          .
+01/04/2026  01:47 AM    <DIR>          ..
+01/12/2026  07:03 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj\Debug\net8.0
+
+01/12/2026  07:03 PM    <DIR>          .
+01/12/2026  07:03 PM    <DIR>          ..
+01/04/2026  01:47 AM               198 .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+01/10/2026  06:52 PM    <DIR>          ref
+01/10/2026  06:52 PM    <DIR>          refint
+01/10/2026  06:52 PM                 0 Tindro.B.DD37993F.Up2Date
+01/04/2026  01:47 AM             1,036 Tindro.BackgroundJobs.AssemblyInfo.cs
+01/04/2026  01:47 AM                66 Tindro.BackgroundJobs.AssemblyInfoInputs.cache
+01/12/2026  07:03 PM            16,959 Tindro.BackgroundJobs.assets.cache
+01/12/2026  07:03 PM            18,878 Tindro.BackgroundJobs.csproj.AssemblyReference.cache
+01/10/2026  06:52 PM                66 Tindro.BackgroundJobs.csproj.CoreCompileInputs.cache
+01/10/2026  06:52 PM             2,414 Tindro.BackgroundJobs.csproj.FileListAbsolute.txt
+01/10/2026  06:52 PM             4,096 Tindro.BackgroundJobs.dll
+01/04/2026  01:47 AM               625 Tindro.BackgroundJobs.GeneratedMSBuildEditorConfig.editorconfig
+01/04/2026  01:47 AM               295 Tindro.BackgroundJobs.GlobalUsings.g.cs
+01/10/2026  06:52 PM            12,328 Tindro.BackgroundJobs.pdb
+              12 File(s)         56,961 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj\Debug\net8.0\ref
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             5,120 Tindro.BackgroundJobs.dll
+               1 File(s)          5,120 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj\Debug\net8.0\refint
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             5,120 Tindro.BackgroundJobs.dll
+               1 File(s)          5,120 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain
+
+01/04/2026  02:33 AM    <DIR>          .
+01/04/2026  02:33 AM    <DIR>          ..
+01/04/2026  01:44 AM    <DIR>          bin
+01/12/2026  05:58 PM    <DIR>          Chat
+01/04/2026  01:44 AM                75 Class1.cs
+01/10/2026  07:38 PM    <DIR>          Common
+01/12/2026  05:41 PM    <DIR>          Match
+01/12/2026  07:14 PM    <DIR>          Moderation
+01/10/2026  06:52 PM    <DIR>          obj
+01/12/2026  05:37 PM    <DIR>          Payments
+01/12/2026  04:13 PM    <DIR>          Stories
+01/04/2026  01:44 AM               218 Tindro.Domain.csproj
+01/12/2026  06:28 PM    <DIR>          Users
+               2 File(s)            293 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\bin
+
+01/04/2026  01:44 AM    <DIR>          .
+01/04/2026  01:44 AM    <DIR>          ..
+01/04/2026  01:44 AM    <DIR>          Debug
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\bin\Debug
+
+01/04/2026  01:44 AM    <DIR>          .
+01/04/2026  01:44 AM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\bin\Debug\net8.0
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM               431 Tindro.Domain.deps.json
+01/10/2026  06:52 PM             4,096 Tindro.Domain.dll
+01/10/2026  06:52 PM            10,380 Tindro.Domain.pdb
+               3 File(s)         14,907 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\Chat
+
+01/12/2026  05:58 PM    <DIR>          .
+01/12/2026  05:58 PM    <DIR>          ..
+01/12/2026  05:58 PM               183 Conversation.cs
+01/12/2026  05:58 PM               296 Message.cs
+               2 File(s)            479 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\Common
+
+01/10/2026  07:38 PM    <DIR>          .
+01/10/2026  07:38 PM    <DIR>          ..
+01/10/2026  07:38 PM               193 AuditableEntity.cs
+               1 File(s)            193 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\Match
+
+01/12/2026  05:41 PM    <DIR>          .
+01/12/2026  05:41 PM    <DIR>          ..
+01/12/2026  05:41 PM               242 Boost.cs
+01/10/2026  07:41 PM               239 Match.cs
+01/10/2026  07:45 PM               281 Swipe.cs
+               3 File(s)            762 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\Moderation
+
+01/12/2026  07:14 PM    <DIR>          .
+01/12/2026  07:14 PM    <DIR>          ..
+01/12/2026  07:14 PM               311 ModerationResult.cs
+01/12/2026  07:14 PM               346 Report.cs
+               2 File(s)            657 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/04/2026  01:44 AM    <DIR>          Debug
+01/04/2026  01:44 AM             2,485 project.assets.json
+01/10/2026  06:52 PM               230 project.nuget.cache
+01/10/2026  06:52 PM             2,551 Tindro.Domain.csproj.nuget.dgspec.json
+01/04/2026  01:44 AM             1,305 Tindro.Domain.csproj.nuget.g.props
+01/04/2026  01:44 AM               150 Tindro.Domain.csproj.nuget.g.targets
+               5 File(s)          6,721 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Debug
+
+01/04/2026  01:44 AM    <DIR>          .
+01/04/2026  01:44 AM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Debug\net8.0
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/04/2026  01:44 AM               198 .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+01/10/2026  06:52 PM    <DIR>          ref
+01/10/2026  06:52 PM    <DIR>          refint
+01/04/2026  01:44 AM             1,012 Tindro.Domain.AssemblyInfo.cs
+01/04/2026  01:44 AM                66 Tindro.Domain.AssemblyInfoInputs.cache
+01/04/2026  01:44 AM               229 Tindro.Domain.assets.cache
+01/10/2026  06:52 PM                66 Tindro.Domain.csproj.CoreCompileInputs.cache
+01/10/2026  06:52 PM             1,149 Tindro.Domain.csproj.FileListAbsolute.txt
+01/10/2026  06:52 PM             4,096 Tindro.Domain.dll
+01/04/2026  01:44 AM               609 Tindro.Domain.GeneratedMSBuildEditorConfig.editorconfig
+01/04/2026  01:44 AM               295 Tindro.Domain.GlobalUsings.g.cs
+01/10/2026  06:52 PM            10,380 Tindro.Domain.pdb
+              10 File(s)         18,100 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Debug\net8.0\ref
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             4,608 Tindro.Domain.dll
+               1 File(s)          4,608 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\obj\Debug\net8.0\refint
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             4,608 Tindro.Domain.dll
+               1 File(s)          4,608 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\Payments
+
+01/12/2026  05:37 PM    <DIR>          .
+01/12/2026  05:37 PM    <DIR>          ..
+01/12/2026  05:37 PM               356 Subscription.cs
+               1 File(s)            356 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\Stories
+
+01/12/2026  04:13 PM    <DIR>          .
+01/12/2026  04:13 PM    <DIR>          ..
+01/12/2026  04:13 PM               297 Story.cs
+               1 File(s)            297 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\Users
+
+01/12/2026  06:28 PM    <DIR>          .
+01/12/2026  06:28 PM    <DIR>          ..
+01/10/2026  07:38 PM               224 Photo.cs
+01/12/2026  06:28 PM               722 Profile.cs
+01/12/2026  06:10 PM               473 User.cs
+               3 File(s)          1,419 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure
+
+01/12/2026  07:19 PM    <DIR>          .
+01/12/2026  07:19 PM    <DIR>          ..
+01/04/2026  01:45 AM    <DIR>          bin
+01/04/2026  01:45 AM                83 Class1.cs
+01/12/2026  07:19 PM             1,408 DependencyInjection.cs
+01/10/2026  07:38 PM    <DIR>          Identity
+01/12/2026  07:15 PM    <DIR>          Moderation
+01/12/2026  07:03 PM    <DIR>          obj
+01/12/2026  07:09 PM    <DIR>          Payments
+01/12/2026  05:41 PM    <DIR>          Persistence
+01/10/2026  06:50 PM    <DIR>          Redis
+01/12/2026  07:05 PM    <DIR>          Storage
+01/12/2026  07:05 PM             1,189 Tindro.Infrastructure.csproj
+               3 File(s)          2,680 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\bin
+
+01/04/2026  01:45 AM    <DIR>          .
+01/04/2026  01:45 AM    <DIR>          ..
+01/04/2026  01:45 AM    <DIR>          Debug
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\bin\Debug
+
+01/04/2026  01:45 AM    <DIR>          .
+01/04/2026  01:45 AM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\bin\Debug\net8.0
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             4,608 Tindro.Application.dll
+01/10/2026  06:52 PM            11,308 Tindro.Application.pdb
+01/10/2026  06:52 PM             4,096 Tindro.Domain.dll
+01/10/2026  06:52 PM            10,380 Tindro.Domain.pdb
+01/10/2026  06:52 PM            41,369 Tindro.Infrastructure.deps.json
+01/10/2026  06:52 PM             6,144 Tindro.Infrastructure.dll
+01/10/2026  06:52 PM            13,224 Tindro.Infrastructure.pdb
+01/10/2026  06:52 PM               337 Tindro.Infrastructure.runtimeconfig.json
+01/10/2026  06:52 PM             4,096 Tindro.Shared.dll
+01/10/2026  06:52 PM            10,380 Tindro.Shared.pdb
+              10 File(s)        105,942 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\Identity
+
+01/10/2026  07:38 PM    <DIR>          .
+01/10/2026  07:38 PM    <DIR>          ..
+01/10/2026  07:38 PM             1,255 JwtTokenService.cs
+               1 File(s)          1,255 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\Moderation
+
+01/12/2026  07:15 PM    <DIR>          .
+01/12/2026  07:15 PM    <DIR>          ..
+01/12/2026  07:15 PM               840 AiModerationService.cs
+01/12/2026  07:14 PM               381 IModerationService.cs
+               2 File(s)          1,221 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj
+
+01/12/2026  07:03 PM    <DIR>          .
+01/12/2026  07:03 PM    <DIR>          ..
+01/04/2026  01:45 AM    <DIR>          Debug
+01/12/2026  07:03 PM           131,162 project.assets.json
+01/12/2026  07:03 PM             7,059 project.nuget.cache
+01/12/2026  07:03 PM            12,412 Tindro.Infrastructure.csproj.nuget.dgspec.json
+01/05/2026  01:25 PM             2,267 Tindro.Infrastructure.csproj.nuget.g.props
+01/05/2026  01:31 PM             1,085 Tindro.Infrastructure.csproj.nuget.g.targets
+               5 File(s)        153,985 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj\Debug
+
+01/04/2026  01:45 AM    <DIR>          .
+01/04/2026  01:45 AM    <DIR>          ..
+01/12/2026  07:03 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj\Debug\net8.0
+
+01/12/2026  07:03 PM    <DIR>          .
+01/12/2026  07:03 PM    <DIR>          ..
+01/04/2026  01:45 AM               198 .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+01/10/2026  06:52 PM    <DIR>          ref
+01/10/2026  06:52 PM    <DIR>          refint
+01/10/2026  06:52 PM                 0 Tindro.I.271B760C.Up2Date
+01/04/2026  01:45 AM             1,036 Tindro.Infrastructure.AssemblyInfo.cs
+01/04/2026  01:45 AM                66 Tindro.Infrastructure.AssemblyInfoInputs.cache
+01/12/2026  07:03 PM            44,165 Tindro.Infrastructure.assets.cache
+01/12/2026  07:03 PM            17,831 Tindro.Infrastructure.csproj.AssemblyReference.cache
+01/10/2026  06:52 PM                66 Tindro.Infrastructure.csproj.CoreCompileInputs.cache
+01/10/2026  06:52 PM             2,448 Tindro.Infrastructure.csproj.FileListAbsolute.txt
+01/10/2026  06:52 PM             6,144 Tindro.Infrastructure.dll
+01/04/2026  01:45 AM               625 Tindro.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+01/10/2026  06:52 PM                66 Tindro.Infrastructure.genruntimeconfig.cache
+01/04/2026  01:45 AM               295 Tindro.Infrastructure.GlobalUsings.g.cs
+01/10/2026  06:52 PM            13,224 Tindro.Infrastructure.pdb
+              13 File(s)         86,164 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj\Debug\net8.0\ref
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             6,144 Tindro.Infrastructure.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj\Debug\net8.0\refint
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             6,144 Tindro.Infrastructure.dll
+               1 File(s)          6,144 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\Payments
+
+01/12/2026  07:09 PM    <DIR>          .
+01/12/2026  07:09 PM    <DIR>          ..
+01/12/2026  07:09 PM               371 IPaymentGateway.cs
+01/12/2026  07:09 PM               623 RazorpayPaymentGateway.cs
+01/12/2026  07:09 PM               596 StripePaymentGateway.cs
+01/12/2026  07:09 PM               489 WebhookVerifier.cs
+               4 File(s)          2,079 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\Persistence
+
+01/12/2026  05:41 PM    <DIR>          .
+01/12/2026  05:41 PM    <DIR>          ..
+01/12/2026  05:41 PM             1,429 AppDbContext.cs
+01/12/2026  05:58 PM    <DIR>          Configurations
+01/04/2026  02:45 AM    <DIR>          Migrations
+01/12/2026  07:05 PM    <DIR>          Repositories
+               1 File(s)          1,429 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\Persistence\Configurations
+
+01/12/2026  05:58 PM    <DIR>          .
+01/12/2026  05:58 PM    <DIR>          ..
+01/12/2026  05:58 PM               404 ConversationConfiguration.cs
+01/10/2026  07:45 PM               384 MatchConfiguration.cs
+01/12/2026  05:58 PM               369 MessageConfiguration.cs
+01/10/2026  07:38 PM               365 PhotoConfiguration.cs
+01/10/2026  07:38 PM               390 ProfileConfiguration.cs
+01/12/2026  05:45 PM               367 ReportConfiguration.cs
+01/12/2026  04:13 PM               355 StoryConfiguration.cs
+01/12/2026  05:41 PM               377 SubscriptionConfiguration.cs
+01/10/2026  07:45 PM               388 SwipeConfiguration.cs
+01/10/2026  07:38 PM               498 UserConfiguration.cs
+              10 File(s)          3,897 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\Persistence\Migrations
+
+01/04/2026  02:45 AM    <DIR>          .
+01/04/2026  02:45 AM    <DIR>          ..
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\Persistence\Repositories
+
+01/12/2026  07:05 PM    <DIR>          .
+01/12/2026  07:05 PM    <DIR>          ..
+01/12/2026  06:52 PM               239 ChatRepository.cs
+01/12/2026  06:52 PM               240 MatchRepository.cs
+01/12/2026  06:52 PM               240 StoryRepository.cs
+01/12/2026  06:53 PM               247 SubscriptionRepository.cs
+01/12/2026  07:05 PM               773 UserRepository.cs
+               5 File(s)          1,739 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\Redis
+
+01/10/2026  06:50 PM    <DIR>          .
+01/10/2026  06:50 PM    <DIR>          ..
+01/10/2026  06:50 PM               401 RedisService.cs
+               1 File(s)            401 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\Storage
+
+01/12/2026  07:05 PM    <DIR>          .
+01/12/2026  07:05 PM    <DIR>          ..
+01/12/2026  07:03 PM               630 CloudStorageService.cs
+01/12/2026  07:05 PM               327 IStorageService.cs
+01/12/2026  07:05 PM               382 StorageSettings.cs
+               3 File(s)          1,339 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared
+
+01/04/2026  02:41 AM    <DIR>          .
+01/04/2026  02:41 AM    <DIR>          ..
+01/04/2026  01:46 AM    <DIR>          bin
+01/04/2026  01:46 AM                75 Class1.cs
+01/12/2026  07:05 PM    <DIR>          Constants
+01/12/2026  07:05 PM    <DIR>          Enums
+01/12/2026  07:05 PM    <DIR>          Extensions
+01/10/2026  06:52 PM    <DIR>          obj
+01/04/2026  01:46 AM               218 Tindro.Shared.csproj
+01/12/2026  07:05 PM    <DIR>          Utilities
+               2 File(s)            293 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\bin
+
+01/04/2026  01:46 AM    <DIR>          .
+01/04/2026  01:46 AM    <DIR>          ..
+01/04/2026  01:46 AM    <DIR>          Debug
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\bin\Debug
+
+01/04/2026  01:46 AM    <DIR>          .
+01/04/2026  01:46 AM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\bin\Debug\net8.0
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM               431 Tindro.Shared.deps.json
+01/10/2026  06:52 PM             4,096 Tindro.Shared.dll
+01/10/2026  06:52 PM            10,380 Tindro.Shared.pdb
+               3 File(s)         14,907 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\Constants
+
+01/12/2026  07:05 PM    <DIR>          .
+01/12/2026  07:05 PM    <DIR>          ..
+01/12/2026  07:05 PM               209 AppConstants.cs
+               1 File(s)            209 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\Enums
+
+01/12/2026  07:05 PM    <DIR>          .
+01/12/2026  07:05 PM    <DIR>          ..
+01/12/2026  07:05 PM                98 Gender.cs
+01/12/2026  07:05 PM               117 SubscriptionPlan.cs
+               2 File(s)            215 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\Extensions
+
+01/12/2026  07:05 PM    <DIR>          .
+01/12/2026  07:05 PM    <DIR>          ..
+01/12/2026  07:05 PM               178 DateTimeExtensions.cs
+               1 File(s)            178 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/04/2026  01:46 AM    <DIR>          Debug
+01/04/2026  01:46 AM             2,485 project.assets.json
+01/10/2026  06:52 PM               230 project.nuget.cache
+01/10/2026  06:52 PM             2,551 Tindro.Shared.csproj.nuget.dgspec.json
+01/04/2026  01:46 AM             1,305 Tindro.Shared.csproj.nuget.g.props
+01/04/2026  01:46 AM               150 Tindro.Shared.csproj.nuget.g.targets
+               5 File(s)          6,721 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj\Debug
+
+01/04/2026  01:46 AM    <DIR>          .
+01/04/2026  01:46 AM    <DIR>          ..
+01/10/2026  06:52 PM    <DIR>          net8.0
+               0 File(s)              0 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj\Debug\net8.0
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/04/2026  01:46 AM               198 .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+01/10/2026  06:52 PM    <DIR>          ref
+01/10/2026  06:52 PM    <DIR>          refint
+01/04/2026  01:46 AM             1,012 Tindro.Shared.AssemblyInfo.cs
+01/04/2026  01:46 AM                66 Tindro.Shared.AssemblyInfoInputs.cache
+01/04/2026  01:46 AM               229 Tindro.Shared.assets.cache
+01/10/2026  06:52 PM                66 Tindro.Shared.csproj.CoreCompileInputs.cache
+01/10/2026  06:52 PM             1,149 Tindro.Shared.csproj.FileListAbsolute.txt
+01/10/2026  06:52 PM             4,096 Tindro.Shared.dll
+01/04/2026  01:46 AM               609 Tindro.Shared.GeneratedMSBuildEditorConfig.editorconfig
+01/04/2026  01:46 AM               295 Tindro.Shared.GlobalUsings.g.cs
+01/10/2026  06:52 PM            10,380 Tindro.Shared.pdb
+              10 File(s)         18,100 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj\Debug\net8.0\ref
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             4,608 Tindro.Shared.dll
+               1 File(s)          4,608 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj\Debug\net8.0\refint
+
+01/10/2026  06:52 PM    <DIR>          .
+01/10/2026  06:52 PM    <DIR>          ..
+01/10/2026  06:52 PM             4,608 Tindro.Shared.dll
+               1 File(s)          4,608 bytes
+
+ Directory of C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\Utilities
+
+01/12/2026  07:05 PM    <DIR>          .
+01/12/2026  07:05 PM    <DIR>          ..
+01/12/2026  07:05 PM               293 AgeCalculator.cs
+               1 File(s)            293 bytes
+
+     Total Files Listed:
+             305 File(s)     16,713,173 bytes
+             305 Dir(s)   2,235,469,824 bytes free

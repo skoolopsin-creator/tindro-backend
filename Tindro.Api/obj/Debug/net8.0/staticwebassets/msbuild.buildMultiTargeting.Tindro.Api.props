@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Tindro.Api.props" />
+</Project>

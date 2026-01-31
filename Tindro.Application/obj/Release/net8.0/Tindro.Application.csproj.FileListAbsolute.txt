@@ -1,0 +1,17 @@
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\Tindro.Application.csproj.AssemblyReference.cache
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\Tindro.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\Tindro.Application.AssemblyInfoInputs.cache
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\Tindro.Application.AssemblyInfo.cs
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\Tindro.Application.csproj.CoreCompileInputs.cache
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin\Release\net8.0\Tindro.Application.deps.json
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin\Release\net8.0\Tindro.Application.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin\Release\net8.0\Tindro.Application.pdb
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin\Release\net8.0\Tindro.Domain.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin\Release\net8.0\Tindro.Shared.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin\Release\net8.0\Tindro.Domain.pdb
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\bin\Release\net8.0\Tindro.Shared.pdb
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\Tindro.A.71C772B3.Up2Date
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\Tindro.Application.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\refint\Tindro.Application.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\Tindro.Application.pdb
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Release\net8.0\ref\Tindro.Application.dll

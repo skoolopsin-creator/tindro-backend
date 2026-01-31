@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire" Version="1.8.16" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tindro.Application\Tindro.Application.csproj" />
+    <ProjectReference Include="..\Tindro.Infrastructure\Tindro.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

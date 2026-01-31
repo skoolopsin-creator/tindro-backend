@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Result" Version="8.0.0" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="13.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="2.3.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tindro.Domain\Tindro.Domain.csproj" />
+    <ProjectReference Include="..\Tindro.Shared\Tindro.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Moderation\Commands\SubmitModerationDecision\" />
+    <Folder Include="Moderation\Commands\ReportUser\" />
+    <Folder Include="Moderation\Dtos\" />
+    <Folder Include="Moderation\Queries\" />
+    <Folder Include="Payments\Dtos\" />
+    <Folder Include="Payments\Commands\CreateSubscription\" />
+    <Folder Include="Payments\Commands\CancelSubscription\" />
+    <Folder Include="Payments\Commands\HandleWebhook\" />
+    <Folder Include="Payments\Commands\" />
+  </ItemGroup>
+
+</Project>

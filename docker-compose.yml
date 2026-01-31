@@ -1,0 +1,50 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Tindro.Api/Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - CommandDb=Host=command-db;Database=tindro_command;Username=postgres;Password=postgres
+      - QueryDb=Host=query-db;Database=tindro_query;Username=postgres;Password=postgres
+      - Redis=redis:6379
+    depends_on:
+      - command-db
+      - query-db
+      - redis
+
+  worker:
+    build:
+      context: .
+      dockerfile: Tindro.BackgroundJobs/Dockerfile
+    environment:
+      - CommandDb=Host=command-db;Database=tindro_command;Username=postgres;Password=postgres
+      - QueryDb=Host=query-db;Database=tindro_query;Username=postgres;Password=postgres
+      - Redis=redis:6379
+    depends_on:
+      - command-db
+      - query-db
+      - redis
+
+  command-db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: tindro_command
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+  query-db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: tindro_query
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"

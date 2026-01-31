@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|c:\\users\\office\\source\\repos\\tindro.backend\\tindro.api\\controllers\\discoverycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|solutionrelative:tindro.api\\controllers\\discoverycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|c:\\users\\office\\source\\repos\\tindro.backend\\tindro.api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|solutionrelative:tindro.api\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|c:\\users\\office\\source\\repos\\tindro.backend\\tindro.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|solutionrelative:tindro.api\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|c:\\users\\office\\source\\repos\\tindro.backend\\tindro.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|solutionrelative:tindro.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 118,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DiscoveryController.cs",
+              "DocumentMoniker": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\DiscoveryController.cs",
+              "RelativeDocumentMoniker": "Tindro.Api\\Controllers\\DiscoveryController.cs",
+              "ToolTip": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\DiscoveryController.cs",
+              "RelativeToolTip": "Tindro.Api\\Controllers\\DiscoveryController.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAA0wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T09:35:03.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Tindro.Api\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Tindro.Api\\Controllers\\ChatController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T09:34:55.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Tindro.Api\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Tindro.Api\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T09:34:51.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Tindro.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Tindro.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T09:34:46.936Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

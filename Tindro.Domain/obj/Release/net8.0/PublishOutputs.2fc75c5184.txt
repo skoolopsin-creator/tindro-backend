@@ -1,0 +1,3 @@
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\bin\Release\net8.0\publish\Tindro.Domain.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\bin\Release\net8.0\publish\Tindro.Domain.deps.json
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Domain\bin\Release\net8.0\publish\Tindro.Domain.pdb

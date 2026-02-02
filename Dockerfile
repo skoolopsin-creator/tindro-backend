@@ -1,15 +1,21 @@
-# Build stage
+# --------------------
+# Build Stage
+# --------------------
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
+WORKDIR /src
 
 COPY . .
 RUN dotnet restore
-RUN dotnet publish -c Release -o out
+RUN dotnet publish Tindro.Api/Tindro.Api.csproj -c Release -o /app/publish
 
-# Runtime stage
+# --------------------
+# Runtime Stage
+# --------------------
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app/out .
+
+COPY --from=build /app/publish .
+
 EXPOSE 8080
 
-ENTRYPOINT ["dotnet", "Tindro.Backend.dll"]
+ENTRYPOINT ["dotnet", "Tindro.Api.dll"]

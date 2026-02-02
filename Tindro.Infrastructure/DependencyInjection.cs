@@ -36,11 +36,28 @@ namespace Tindro.Infrastructure
             // ------------------------
             // DATABASES
             // ------------------------
-            services.AddDbContext<CommandDbContext>(options =>
-                options.UseNpgsql(config.GetConnectionString("CommandDb")));
+          var commandConn =
+    config["ConnectionStrings:CommandDb"]
+    ?? config["CommandDb"]
+    ?? config["DATABASE_URL"];
 
-            services.AddDbContext<QueryDbContext>(options =>
-                options.UseNpgsql(config.GetConnectionString("QueryDb")));
+var queryConn =
+    config["ConnectionStrings:QueryDb"]
+    ?? config["QueryDb"]
+    ?? config["DATABASE_URL"];
+
+if (string.IsNullOrWhiteSpace(commandConn))
+    throw new Exception("CommandDb connection string missing");
+
+if (string.IsNullOrWhiteSpace(queryConn))
+    throw new Exception("QueryDb connection string missing");
+
+services.AddDbContext<CommandDbContext>(options =>
+    options.UseNpgsql(commandConn));
+
+services.AddDbContext<QueryDbContext>(options =>
+    options.UseNpgsql(queryConn));
+
 
             // ------------------------
             // STORAGE SETTINGS

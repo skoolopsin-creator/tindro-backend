@@ -18,14 +18,23 @@ public AuthController(CommandDbContext db, IJwtTokenService jwt)
         _db = db;
         _jwt = jwt;
     }
-   [HttpPost("firebase")]
+  [HttpPost("firebase")]
 public async Task<IActionResult> FirebaseLogin([FromBody] FirebaseAuthRequest req)
 {
     try
     {
-        var decodedToken = await FirebaseAdmin.Auth.FirebaseAuth
+        if (req == null || string.IsNullOrEmpty(req.FirebaseToken))
+            return BadRequest("Firebase token missing");
+
+        if (FirebaseAuth.DefaultInstance == null)
+            return StatusCode(500, "Firebase not initialized");
+
+        var decodedToken = await FirebaseAuth
             .DefaultInstance
             .VerifyIdTokenAsync(req.FirebaseToken);
+
+        if (decodedToken == null)
+            return Unauthorized("Invalid Firebase token");
 
         var firebaseUid = decodedToken.Uid;
 
@@ -54,7 +63,6 @@ public async Task<IActionResult> FirebaseLogin([FromBody] FirebaseAuthRequest re
                 IsShadowBanned = false,
                 CreatedAt = DateTime.UtcNow,
                 LastActive = DateTime.UtcNow
-               
             };
 
             _db.Users.Add(user);
@@ -71,10 +79,11 @@ public async Task<IActionResult> FirebaseLogin([FromBody] FirebaseAuthRequest re
     }
     catch (Exception ex)
     {
-        Console.WriteLine(ex.ToString());
-        return StatusCode(500, "Internal Server Error");
+        Console.WriteLine(ex);
+        return StatusCode(500, ex.Message);
     }
 }
+
 
 
     [HttpPost("send-otp")]

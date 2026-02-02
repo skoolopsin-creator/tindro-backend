@@ -47,25 +47,22 @@ app.UseSwaggerUI();
 
 
 
-if (app.Environment.IsDevelopment())
+using var scope = app.Services.CreateScope();
+
+try
 {
-    using var scope = app.Services.CreateScope();
+    var cmd = scope.ServiceProvider.GetRequiredService<CommandDbContext>();
+    var qry = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
 
-    try
-    {
-        var cmd = scope.ServiceProvider.GetRequiredService<CommandDbContext>();
-        var qry = scope.ServiceProvider.GetRequiredService<QueryDbContext>();
-
-        cmd.Database.EnsureCreated();
-        qry.Database.EnsureCreated();
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"DB init failed: {ex}");
-        throw;
-    }
-
+    cmd.Database.Migrate();
+    qry.Database.Migrate();
 }
+catch (Exception ex)
+{
+    Console.WriteLine($"DB init failed: {ex}");
+    throw;
+}
+
 
 
 app.UseMiddleware<ExceptionMiddleware>();

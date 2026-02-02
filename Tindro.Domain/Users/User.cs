@@ -6,7 +6,7 @@ namespace Tindro.Domain.Users;
 public class User : AuditableEntity
 {
     public Guid Id { get; set; }
-
+    public string FirebaseUid { get; set; } = null!;
     public string Phone { get; set; } = null!;
     public bool IsVerified { get; set; }
 

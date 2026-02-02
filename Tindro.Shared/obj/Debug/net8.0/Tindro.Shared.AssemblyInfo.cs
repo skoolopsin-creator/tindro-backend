@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tindro.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e9060fb9307d94d7ca4f76ca40327a3338bd80b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b6439bd818efd095eecfff951530860506105dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tindro.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tindro.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

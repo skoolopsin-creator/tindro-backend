@@ -69,3 +69,4 @@ C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj\Debug\net8
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj\Debug\net8.0\Tindro.BackgroundJobs.pdb
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj\Debug\net8.0\Tindro.BackgroundJobs.genruntimeconfig.cache
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj\Debug\net8.0\ref\Tindro.BackgroundJobs.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.BackgroundJobs\obj\Debug\net8.0\Tindro.BackgroundJobs.sourcelink.json

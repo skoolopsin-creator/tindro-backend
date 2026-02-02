@@ -18,26 +18,43 @@ public AuthController(CommandDbContext db, IJwtTokenService jwt)
         _db = db;
         _jwt = jwt;
     }
-    [HttpPost("firebase")]
-    public async Task<IActionResult> FirebaseLogin([FromBody] FirebaseAuthRequest req)
+   [HttpPost("firebase")]
+public async Task<IActionResult> FirebaseLogin([FromBody] FirebaseAuthRequest req)
+{
+    try
     {
         var decodedToken = await FirebaseAdmin.Auth.FirebaseAuth
             .DefaultInstance
             .VerifyIdTokenAsync(req.FirebaseToken);
 
+        var firebaseUid = decodedToken.Uid;
+
+        if (!decodedToken.Claims.ContainsKey("phone_number"))
+            return Unauthorized("Phone number missing in Firebase token");
+
         var phone = decodedToken.Claims["phone_number"]?.ToString();
 
         if (string.IsNullOrEmpty(phone))
-            return Unauthorized("Invalid Firebase token");
+            return Unauthorized("Invalid phone number in token");
 
-        var user = _db.Users.FirstOrDefault(x => x.Phone == phone);
+        Console.WriteLine($"UID: {firebaseUid}");
+        Console.WriteLine($"PHONE: {phone}");
+
+        var user = _db.Users.FirstOrDefault(x =>
+            x.FirebaseUid == firebaseUid || x.Phone == phone);
 
         if (user == null)
         {
             user = new User
             {
                 Id = Guid.NewGuid(),
-                Phone = phone
+                FirebaseUid = firebaseUid,
+                Phone = phone,
+                IsVerified = true,
+                IsShadowBanned = false,
+                CreatedAt = DateTime.UtcNow,
+                LastActive = DateTime.UtcNow
+               
             };
 
             _db.Users.Add(user);
@@ -52,6 +69,13 @@ public AuthController(CommandDbContext db, IJwtTokenService jwt)
             userId = user.Id
         });
     }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex.ToString());
+        return StatusCode(500, "Internal Server Error");
+    }
+}
+
 
     [HttpPost("send-otp")]
     public IActionResult SendOtp([FromBody] string phone)

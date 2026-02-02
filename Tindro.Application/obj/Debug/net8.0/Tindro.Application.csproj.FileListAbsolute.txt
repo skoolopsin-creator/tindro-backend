@@ -15,3 +15,4 @@ C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Debug\net8.0\
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Debug\net8.0\refint\Tindro.Application.dll
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Debug\net8.0\Tindro.Application.pdb
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Debug\net8.0\ref\Tindro.Application.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Application\obj\Debug\net8.0\Tindro.Application.sourcelink.json

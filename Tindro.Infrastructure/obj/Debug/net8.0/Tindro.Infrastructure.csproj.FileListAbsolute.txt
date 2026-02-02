@@ -20,3 +20,4 @@ C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj\Debug\net8
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj\Debug\net8.0\Tindro.Infrastructure.pdb
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj\Debug\net8.0\Tindro.Infrastructure.genruntimeconfig.cache
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj\Debug\net8.0\ref\Tindro.Infrastructure.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Infrastructure\obj\Debug\net8.0\Tindro.Infrastructure.sourcelink.json

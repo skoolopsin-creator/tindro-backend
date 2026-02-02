@@ -144,3 +144,4 @@ C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug\net8.0\refint\T
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug\net8.0\Tindro.Api.pdb
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug\net8.0\Tindro.Api.genruntimeconfig.cache
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug\net8.0\ref\Tindro.Api.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Api\obj\Debug\net8.0\Tindro.Api.sourcelink.json

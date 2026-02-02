@@ -9,3 +9,4 @@ C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj\Debug\net8.0\Tindr
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj\Debug\net8.0\refint\Tindro.Shared.dll
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj\Debug\net8.0\Tindro.Shared.pdb
 C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj\Debug\net8.0\ref\Tindro.Shared.dll
+C:\Users\Office\source\repos\Tindro.Backend\Tindro.Shared\obj\Debug\net8.0\Tindro.Shared.sourcelink.json

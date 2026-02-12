@@ -5,6 +5,7 @@ using Tindro.Domain.Users;
 using Tindro.Infrastructure.Persistence;
 using Tindro.Application;
 using Microsoft.EntityFrameworkCore;
+using System.IdentityModel.Tokens.Jwt;
 
 
 [Authorize]
@@ -22,9 +23,10 @@ public class UsersQueryController : ControllerBase
     [HttpGet("me")]
     public IActionResult Me()
     {
-        var userId = Guid.Parse(
-            User.FindFirstValue(ClaimTypes.NameIdentifier)!
-        );
+       var userId = Guid.Parse(
+    User.FindFirstValue(JwtRegisteredClaimNames.Sub)!
+);
+
 
         var user = _db.Users
             .AsNoTracking()

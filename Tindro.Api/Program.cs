@@ -11,7 +11,7 @@ using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 var jwtKey = builder.Configuration["Jwt:Key"];

@@ -20,32 +20,34 @@ public class UsersQueryController : ControllerBase
         _db = db;
     }
 
-    [HttpGet("me")]
-    public IActionResult Me()
-    {
-       var userId = Guid.Parse(
-       var userId = User.FindFirst("sub")?.Value;
+  [HttpGet("me")]
+public IActionResult Me()
+{
+    // Read the "sub" claim coming from JWT
+    var sub = User.FindFirst("sub")?.Value;
 
-if (userId == null)
-    return Unauthorized("sub claim missing");
+    if (string.IsNullOrEmpty(sub))
+        return Unauthorized("sub claim missing");
 
-var guid = Guid.Parse(userId);
+    // Convert to Guid
+    if (!Guid.TryParse(sub, out var userId))
+        return Unauthorized("invalid sub claim");
 
+    var user = _db.Users
+        .AsNoTracking()
+        .Where(x => x.Id == userId)
+        .Select(x => new
+        {
+            x.Id,
+            x.Phone,
+            Profile = x.Profile
+        })
+        .FirstOrDefault();
 
-);
+    if (user == null)
+        return NotFound("user not found");
 
+    return Ok(user);
+}
 
-        var user = _db.Users
-            .AsNoTracking()
-            .Where(x => x.Id == userId)
-            .Select(x => new
-            {
-                x.Id,
-                x.Phone,
-                Profile = x.Profile
-            })
-            .FirstOrDefault();
-
-        return Ok(user);
-    }
 }

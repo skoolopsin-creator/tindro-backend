@@ -24,7 +24,13 @@ public class UsersQueryController : ControllerBase
     public IActionResult Me()
     {
        var userId = Guid.Parse(
-       User.FindFirstValue(JwtRegisteredClaimNames.Sub)!
+       var userId = User.FindFirst("sub")?.Value;
+
+if (userId == null)
+    return Unauthorized("sub claim missing");
+
+var guid = Guid.Parse(userId);
+
 
 );
 

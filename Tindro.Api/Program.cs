@@ -11,7 +11,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
-
+JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 builder.Services.AddInfrastructure(builder.Configuration);
 
@@ -29,7 +29,7 @@ builder.Services
     .AddJwtBearer(options =>
     {
         // 🔥 Disable Microsoft’s default claim remapping
-        options.MapInboundClaims = false;
+      
 
         options.TokenValidationParameters = new TokenValidationParameters
         {

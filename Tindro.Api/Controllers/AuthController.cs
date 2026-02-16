@@ -69,13 +69,28 @@ public async Task<IActionResult> FirebaseLogin([FromBody] FirebaseAuthRequest re
             _db.SaveChanges();
         }
 
-        var token = _jwt.GenerateToken(user);
+        var accessToken = _jwt.GenerateToken(user);
 
-        return Ok(new
-        {
-            token,
-            userId = user.Id
-        });
+var refreshToken = new RefreshToken
+{
+    Id = Guid.NewGuid(),
+    UserId = user.Id,
+    Token = Guid.NewGuid().ToString("N") + Guid.NewGuid().ToString("N"),
+    CreatedAt = DateTime.UtcNow,
+    ExpiresAt = DateTime.UtcNow.AddDays(30),
+    IsRevoked = false
+};
+
+_db.RefreshTokens.Add(refreshToken);
+_db.SaveChanges();
+
+return Ok(new
+{
+    accessToken,
+    refreshToken = refreshToken.Token,
+    userId = user.Id
+});
+
     }
     catch (Exception ex)
     {
@@ -84,6 +99,26 @@ public async Task<IActionResult> FirebaseLogin([FromBody] FirebaseAuthRequest re
     }
 }
 
+[HttpPost("refresh")]
+public IActionResult Refresh([FromBody] string refreshToken)
+{
+    var token = _db.RefreshTokens
+        .FirstOrDefault(x => x.Token == refreshToken);
+
+    if (token == null || token.IsRevoked || token.ExpiresAt < DateTime.UtcNow)
+        return Unauthorized("Invalid refresh token");
+
+    var user = _db.Users.Find(token.UserId);
+    if (user == null)
+        return Unauthorized();
+
+    var newAccessToken = _jwt.GenerateToken(user);
+
+    return Ok(new
+    {
+        accessToken = newAccessToken
+    });
+}
 
 
     [HttpPost("send-otp")]

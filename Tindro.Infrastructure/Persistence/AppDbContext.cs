@@ -24,6 +24,7 @@ public class AppDbContext : DbContext
     public DbSet<User> Users => Set<User>();
     public DbSet<Profile> Profiles => Set<Profile>();
     public DbSet<Photo> Photos => Set<Photo>();
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
     public DbSet<Swipe> Swipes => Set<Swipe>();
     public DbSet<Tindro.Domain.Match.Match> Matches
     => Set<Tindro.Domain.Match.Match>();

@@ -14,7 +14,7 @@ public class InterestsController : ControllerBase
 {
     private readonly QueryDbContext _db;
 
-    public InterestsController(CommandDbContext db)
+    public InterestsController(QueryDbContext db)
     {
         _db = db;
     }

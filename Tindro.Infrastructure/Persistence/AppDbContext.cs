@@ -13,6 +13,7 @@ using Microsoft.VisualBasic;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Text.RegularExpressions;
 using Tindro.Domain.Feed;
+using Tindro.Domain.Common;
 
 namespace Tindro.Infrastructure.Persistence;
 
@@ -39,7 +40,7 @@ public class AppDbContext : DbContext
     public DbSet<VoiceNote> VoiceNotes => Set<VoiceNote>();
     public DbSet<MessageExtension> MessageExtensions => Set<MessageExtension>();
     public DbSet<ConversationSettings> ConversationSettings => Set<ConversationSettings>();
-
+    public DbSet<Interest> Interests => Set<Interest>();
     public DbSet<Story> Stories => Set<Story>();
     public DbSet<StoryLike> StoryLikes => Set<StoryLike>();
     public DbSet<StoryComment> StoryComments => Set<StoryComment>();

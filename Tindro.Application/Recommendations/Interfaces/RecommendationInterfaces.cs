@@ -1,5 +1,6 @@
 using Tindro.Domain.Recommendations;
 using Tindro.Application.Recommendations.Dtos;
+using Tindro.Domain.Common;
 
 namespace Tindro.Application.Recommendations.Interfaces;
 
@@ -20,10 +21,13 @@ public interface IPreferenceRepository
     Task<UserPreferences?> GetOrCreatePreferencesAsync(Guid userId);
     Task CreatePreferencesAsync(UserPreferences preferences);
     Task UpdatePreferencesAsync(UserPreferences preferences);
-    Task<UserInterest?> GetInterestAsync(Guid userId, string interestName);
+    Task<UserInterest?> GetInterestAsync(Guid userId, Guid interestId);
     Task<IEnumerable<UserInterest>> GetUserInterestsAsync(Guid userId);
     Task AddInterestAsync(UserInterest interest);
     Task RemoveInterestAsync(Guid interestId);
+
+    Task<bool> ExistsAsync(Guid userId, Guid interestId);
+    
 }
 
 public interface ISkipRepository
@@ -50,6 +54,7 @@ public interface IPreferenceMatchingService
     decimal CalculateLocationCompatibility(string userLocation, UserPreferences preferences);
     decimal CalculateLifestyleCompatibility(Guid userId, UserPreferences preferences);
     decimal CalculateHeightCompatibility(int userHeight, UserPreferences preferences);
+
 }
 
 public interface IInterestMatchingService
@@ -64,4 +69,10 @@ public interface IProfileScoreService
     decimal CalculateProfileCompletenessScore(Guid userId);
     decimal CalculateVerificationScore(Guid userId);
     decimal CalculateOverallScore(CompatibilityScoreDto compatibility);
+}
+
+public interface IInterestRepository
+{
+    Task<Interest?> GetByIdAsync(Guid id);
+
 }

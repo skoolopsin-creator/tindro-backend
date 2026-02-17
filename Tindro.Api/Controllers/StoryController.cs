@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Tindro.Api.Extensions;
 using Tindro.Domain.Stories;
 using Tindro.Infrastructure.Persistence;
 
@@ -19,7 +20,7 @@ public class StoryController : ControllerBase
     [HttpPost]
     public IActionResult AddStory([FromBody] string mediaUrl)
     {
-        var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var userId = User.GetUserId();
 
         var story = new Story
         {

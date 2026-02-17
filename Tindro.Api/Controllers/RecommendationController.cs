@@ -4,6 +4,7 @@ using System.Security.Claims;
 using Tindro.Application.Recommendations.Interfaces;
 using Tindro.Application.Recommendations.Dtos;
 using Tindro.Domain.Recommendations;
+using Tindro.Api.Extensions;
 
 namespace Tindro.Api.Controllers;
 
@@ -15,15 +16,18 @@ public class RecommendationController : ControllerBase
     private readonly IRecommendationService _recommendationService;
     private readonly IPreferenceRepository _preferenceRepo;
     private readonly ISkipRepository _skipRepo;
+    private readonly IInterestRepository _interestrepo;
 
     public RecommendationController(
         IRecommendationService recommendationService,
         IPreferenceRepository preferenceRepo,
-        ISkipRepository skipRepo)
+        ISkipRepository skipRepo,
+        IInterestRepository interestRepository)
     {
         _recommendationService = recommendationService;
         _preferenceRepo = preferenceRepo;
         _skipRepo = skipRepo;
+        _interestrepo = interestRepository;
     }
 
     /// <summary>
@@ -37,7 +41,7 @@ public class RecommendationController : ControllerBase
         [FromQuery] int pageSize = 20,
         [FromQuery] string? sortBy = "score")
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+            var userId = User.GetUserId();
 
         var filter = new RecommendationFilterDto
         {
@@ -67,7 +71,7 @@ public class RecommendationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetCompatibilityScore(Guid targetUserId)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
 
         var score = await _recommendationService.CalculateCompatibilityAsync(userId, targetUserId);
 
@@ -85,7 +89,7 @@ public class RecommendationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> GetPreferences()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
 
         var preferences = await _preferenceRepo.GetOrCreatePreferencesAsync(userId);
 
@@ -122,7 +126,7 @@ public class RecommendationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> UpdatePreferences([FromBody] UserPreferencesDto dto)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
 
         var preferences = await _preferenceRepo.GetOrCreatePreferencesAsync(userId);
 
@@ -158,24 +162,34 @@ public class RecommendationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> AddInterest([FromBody] AddInterestRequest request)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
 
-        var existing = await _preferenceRepo.GetInterestAsync(userId, request.InterestName);
-        if (existing != null)
-            return BadRequest("Interest already exists");
+        var interest = await _interestrepo.GetByIdAsync(request.InterestId);
+        if (interest == null)
+            return BadRequest("Invalid interest");
 
-        var interest = new UserInterest
+        // 2?? Check duplicate
+        var exists = await _preferenceRepo.ExistsAsync(userId, request.InterestId);
+        if (exists)
+            return BadRequest("Interest already added");
+
+
+
+        var userInterest = new UserInterest
         {
-            Id = Guid.NewGuid(),
             UserId = userId,
-            InterestName = request.InterestName,
-            Category = request.Category,
+            InterestId = request.InterestId,
             ConfidenceScore = request.ConfidenceScore
         };
 
-        await _preferenceRepo.AddInterestAsync(interest);
+        await _preferenceRepo.AddInterestAsync(userInterest);
 
-        return CreatedAtAction(nameof(GetPreferences), new { id = interest.Id });
+        return Ok(new
+        {
+            interest.Id,
+            interest.Name,
+            interest.Category
+        });
     }
 
     /// <summary>
@@ -186,14 +200,16 @@ public class RecommendationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> GetInterests()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
 
         var interests = await _preferenceRepo.GetUserInterestsAsync(userId);
 
         var dtos = interests.Select(i => new UserInterestDto
         {
-            InterestName = i.InterestName,
-            Category = i.Category,
+            InterestId = i.InterestId,
+            InterestName = i.Interest.Name,
+            Category = i.Interest.Category,
+            IconKey = i.Interest.IconKey,
             ConfidenceScore = i.ConfidenceScore
         });
 
@@ -209,7 +225,7 @@ public class RecommendationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> SkipProfile([FromBody] SkipProfileRequest request)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
 
         var existing = await _skipRepo.GetSkipAsync(userId, request.SkippedUserId);
         if (existing != null)
@@ -237,7 +253,7 @@ public class RecommendationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status401Unauthorized)]
     public async Task<IActionResult> PrefetchRecommendations()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
 
         await _recommendationService.PrefetchRecommendationsAsync(userId);
 

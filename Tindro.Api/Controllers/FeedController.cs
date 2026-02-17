@@ -25,7 +25,7 @@ public class FeedController : ControllerBase
     [HttpGet]
     public IActionResult GetFeed()
     {
-        var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var userId = User.GetUserId();
 
         var swiped = _db.Swipes
             .Where(x => x.FromUserId == userId)

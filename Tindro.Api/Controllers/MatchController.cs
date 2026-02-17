@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Tindro.Infrastructure.Persistence;
 using Tindro.Domain.Match;
+using Tindro.Api.Extensions;
 
 [Authorize]
 [ApiController]
@@ -19,7 +20,7 @@ public class MatchController : ControllerBase
     [HttpPost("swipe")]
     public IActionResult Swipe([FromBody] SwipeRequest req)
     {
-        var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var userId = User.GetUserId();
 
         if (_db.Swipes.Any(x => x.FromUserId == userId && x.ToUserId == req.TargetUserId))
             return BadRequest("Already swiped");

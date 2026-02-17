@@ -4,6 +4,7 @@ using System.Security.Claims;
 using Tindro.Domain.Users;
 using Tindro.Infrastructure.Persistence;
 using Tindro.Application;
+using Tindro.Api.Extensions;
 
 [Authorize]
 [ApiController]
@@ -21,7 +22,7 @@ public class UsersController : ControllerBase
     [HttpPost("profile")]
     public IActionResult SaveProfile(CreateProfileDto dto)
     {
-        var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var userId = User.GetUserId();
 
         var profile = _db.Profiles.FirstOrDefault(x => x.UserId == userId);
 

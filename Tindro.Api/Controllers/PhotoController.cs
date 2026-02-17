@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Tindro.Api.Extensions;
 using Tindro.Domain.Users;
 using Tindro.Infrastructure.Persistence;
 
@@ -19,7 +20,7 @@ public class PhotoController : ControllerBase
     [HttpPost]
     public IActionResult AddPhoto(string url)
     {
-        var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var userId = User.GetUserId();
 
         var profile = _db.Profiles.First(x => x.UserId == userId);
 

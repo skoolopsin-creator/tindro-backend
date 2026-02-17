@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Tindro.Application.Discovery.Interfaces;
 using Tindro.Application.Discovery.Dtos;
+using Tindro.Api.Extensions;
 
 namespace Tindro.Api.Controllers;
 
@@ -29,7 +30,7 @@ public class DiscoveryFiltersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> ApplyFilter([FromBody] ApplyFilterRequestDto request)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var result = await _filterService.ApplyFilterAsync(userId, request);
         return Ok(result);
     }
@@ -53,7 +54,7 @@ public class DiscoveryFiltersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> SaveFilterPreferences([FromBody] FilterPreferencesDto preferencesDto)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var saved = await _filterService.SaveFilterPreferencesAsync(userId, preferencesDto);
         return Ok(saved);
     }
@@ -65,7 +66,7 @@ public class DiscoveryFiltersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetFilterPreferences([FromQuery] string? filterName = null)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var preferences = await _filterService.GetFilterPreferencesAsync(userId, filterName);
         return Ok(preferences);
     }
@@ -77,7 +78,7 @@ public class DiscoveryFiltersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetAllFilterPreferences()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var filters = await _filterService.GetAllUserFiltersAsync(userId);
         return Ok(filters);
     }
@@ -102,7 +103,7 @@ public class DiscoveryFiltersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> CreateSavedFilter([FromBody] SavedFilterDto request)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var saved = await _filterService.CreateSavedFilterAsync(userId, request.Name, request.FilterPreferences ?? new());
         return CreatedAtAction(nameof(GetSavedFilter), new { savedFilterId = saved.Id }, saved);
     }
@@ -114,7 +115,7 @@ public class DiscoveryFiltersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetSavedFilters()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var filters = await _filterService.GetSavedFiltersAsync(userId);
         return Ok(filters);
     }
@@ -151,7 +152,7 @@ public class DiscoveryFiltersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> SetDefaultFilter(Guid savedFilterId)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var filter = await _filterService.SetDefaultFilterAsync(userId, savedFilterId);
         return Ok(filter);
     }
@@ -163,7 +164,7 @@ public class DiscoveryFiltersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetFilterAnalytics()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var analytics = await _filterService.GetFilterAnalyticsAsync(userId);
         return Ok(analytics);
     }
@@ -175,7 +176,7 @@ public class DiscoveryFiltersController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> EstimateFilterResults([FromBody] FilterPreferencesDto preferences)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var count = await _filterService.EstimateFilterResultsAsync(userId, preferences);
         return Ok(new { estimatedCount = count });
     }

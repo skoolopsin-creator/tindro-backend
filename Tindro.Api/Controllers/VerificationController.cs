@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Tindro.Application.Verification.Interfaces;
 using Tindro.Application.Verification.Dtos;
+using Tindro.Api.Extensions;
 
 namespace Tindro.Api.Controllers;
 
@@ -31,7 +32,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> SubmitVerification([FromBody] SubmitVerificationRequestDto request)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var result = await _verificationService.SubmitVerificationAsync(userId, request);
         return Ok(result);
     }
@@ -43,7 +44,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetVerificationStatus()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var status = await _verificationService.GetVerificationStatusAsync(userId);
         return Ok(status);
     }
@@ -55,7 +56,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> IsUserVerified()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var isVerified = await _verificationService.IsUserVerifiedAsync(userId);
         return Ok(new { isVerified });
     }
@@ -67,7 +68,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetVerificationScore()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var score = await _verificationService.GetVerificationScoreAsync(userId);
         return Ok(new { verificationScore = score });
     }
@@ -79,7 +80,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetVerificationProgress()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var progress = await _verificationService.GetVerificationProgressAsync(userId);
         return Ok(progress);
     }
@@ -95,7 +96,7 @@ public class VerificationController : ControllerBase
         [FromQuery] string documentType,
         [FromForm] IFormFile file)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         
         using var stream = file.OpenReadStream();
         var result = await _verificationService.UploadVerificationDocumentAsync(
@@ -112,7 +113,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> RequestBackgroundCheck([FromBody] RequestBackgroundCheckDto request)
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var result = await _verificationService.RequestBackgroundCheckAsync(userId, request);
         return Ok(result);
     }
@@ -125,7 +126,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetBackgroundCheckStatus()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var status = await _verificationService.GetBackgroundCheckStatusAsync(userId);
         
         if (status == null)
@@ -141,7 +142,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> IsBackgroundClear()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var isClear = await _verificationService.IsBackgroundClearAsync(userId);
         return Ok(new { isBackgroundClear = isClear });
     }
@@ -153,7 +154,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetUserBadges()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var badges = await _badgeService.GetUserBadgesAsync(userId);
         return Ok(badges);
     }
@@ -165,7 +166,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetVerificationTimeline()
     {
-        var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var userId = User.GetUserId();
         var timeline = await _verificationService.GetVerificationTimelineAsync(userId);
         return Ok(timeline);
     }
@@ -193,7 +194,7 @@ public class VerificationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<IActionResult> ApproveVerification(Guid recordId)
     {
-        var adminId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "");
+        var adminId = User.GetUserId();
         await _verificationService.ApproveVerificationAsync(recordId, adminId);
         return NoContent();
     }

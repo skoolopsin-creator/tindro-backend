@@ -61,10 +61,13 @@ public class RecommendationResultDto
 
 public class UserInterestDto
 {
-    public string InterestName { get; set; } = string.Empty;
-    public string Category { get; set; } = string.Empty;
-    public int ConfidenceScore { get; set; } = 50;
+    public Guid InterestId { get; set; }
+    public string InterestName { get; set; }
+    public string Category { get; set; }
+    public string IconKey { get; set; }
+    public int ConfidenceScore { get; set; }
 }
+
 
 public class RecommendationFilterDto
 {
@@ -73,14 +76,13 @@ public class RecommendationFilterDto
     public int? MinAge { get; set; }
     public int? MaxAge { get; set; }
     public int? MaxDistance { get; set; }
-    public string? SortBy { get; set; } = "score"; // "score", "recent", "online"
+    public string? SortBy { get; set; } = "score"; 
     public List<string>? InterestFilter { get; set; }
 }
 
 public class AddInterestRequest
 {
-    public string InterestName { get; set; } = string.Empty;
-    public string Category { get; set; } = string.Empty;
+    public Guid InterestId { get; set; }
     public int ConfidenceScore { get; set; } = 50;
 }
 

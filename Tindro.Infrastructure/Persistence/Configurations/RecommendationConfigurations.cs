@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Tindro.Domain.Common;
 using Tindro.Domain.Recommendations;
 
 namespace Tindro.Infrastructure.Persistence.Configurations;
@@ -62,21 +63,54 @@ public class RecommendationScoreConfiguration : IEntityTypeConfiguration<Recomme
     }
 }
 
+public class InterestConfiguration : IEntityTypeConfiguration<Interest>
+{
+    public void Configure(EntityTypeBuilder<Interest> builder)
+    {
+        builder.HasKey(x => x.Id);
+
+        builder.Property(x => x.Name)
+            .IsRequired()
+            .HasMaxLength(100);
+
+        builder.Property(x => x.Category)
+            .IsRequired()
+            .HasMaxLength(50);
+
+        builder.Property(x => x.IconKey)
+            .HasMaxLength(50);
+
+        builder.HasIndex(x => x.Name).IsUnique();
+
+        builder.ToTable("interests");
+    }
+}
+
 public class UserInterestConfiguration : IEntityTypeConfiguration<UserInterest>
 {
     public void Configure(EntityTypeBuilder<UserInterest> builder)
     {
-        builder.HasKey(i => i.Id);
+        builder.HasKey(x => x.Id);
 
-        builder.Property(i => i.UserId).IsRequired();
-        builder.Property(i => i.InterestName).IsRequired().HasMaxLength(100);
-        builder.Property(i => i.Category).IsRequired().HasMaxLength(50);
+        builder.Property(x => x.UserId).IsRequired();
+        builder.Property(x => x.InterestId).IsRequired();
 
-        builder.HasIndex(i => new { i.UserId, i.InterestName }).IsUnique();
-        builder.HasIndex(i => i.Category);
+        builder.Property(x => x.ConfidenceScore).IsRequired();
+        builder.Property(x => x.AddedAt).IsRequired();
 
-        builder.Property(i => i.ConfidenceScore).IsRequired();
-        builder.Property(i => i.AddedAt).IsRequired();
+        builder.HasIndex(x => new { x.UserId, x.InterestId }).IsUnique();
+
+        builder
+            .HasOne(x => x.User)
+            .WithMany()
+            .HasForeignKey(x => x.UserId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        builder
+            .HasOne(x => x.Interest)
+            .WithMany(i => i.UserInterests)
+            .HasForeignKey(x => x.InterestId)
+            .OnDelete(DeleteBehavior.Cascade);
 
         builder.ToTable("user_interests");
     }

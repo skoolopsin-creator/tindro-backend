@@ -4,6 +4,7 @@ using System.Security.Claims;
 using Tindro.Domain.Payments;
 using Tindro.Domain.Match;
 using Tindro.Infrastructure.Persistence;
+using Tindro.Api.Extensions;
 
 [Authorize]
 [ApiController]
@@ -20,7 +21,7 @@ public class PaymentController : ControllerBase
     [HttpPost("subscribe")]
     public IActionResult Subscribe(string plan)
     {
-        var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var userId = User.GetUserId();
 
         var sub = new Subscription
         {
@@ -40,7 +41,7 @@ public class PaymentController : ControllerBase
     [HttpPost("boost")]
     public IActionResult ActivateBoost()
     {
-        var userId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var userId = User.GetUserId();
 
         var boost = new Boost
         {

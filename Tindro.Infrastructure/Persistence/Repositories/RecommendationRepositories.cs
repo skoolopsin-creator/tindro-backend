@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Tindro.Domain.Recommendations;
 using Tindro.Application.Recommendations.Interfaces;
 using Tindro.Infrastructure.Persistence;
+using Tindro.Domain.Common;
 
 namespace Tindro.Infrastructure.Persistence.Repositories;
 
@@ -113,10 +114,10 @@ public class PreferenceRepository : IPreferenceRepository
         await _context.SaveChangesAsync();
     }
 
-    public async Task<UserInterest?> GetInterestAsync(Guid userId, string interestName)
+    public async Task<UserInterest?> GetInterestAsync(Guid userId, Guid interestId)
     {
         return await _context.UserInterests
-            .FirstOrDefaultAsync(i => i.UserId == userId && i.InterestName == interestName);
+            .FirstOrDefaultAsync(i => i.UserId == userId && i.InterestId == interestId);
     }
 
     public async Task<IEnumerable<UserInterest>> GetUserInterestsAsync(Guid userId)
@@ -130,6 +131,11 @@ public class PreferenceRepository : IPreferenceRepository
     {
         await _context.UserInterests.AddAsync(interest);
         await _context.SaveChangesAsync();
+    }
+    public async Task<bool> ExistsAsync(Guid userId, Guid interestId)
+    {
+        return await _context.UserInterests
+            .AnyAsync(x => x.UserId == userId && x.InterestId == interestId);
     }
 
     public async Task RemoveInterestAsync(Guid interestId)
@@ -195,4 +201,18 @@ public class SkipRepository : ISkipRepository
             await _context.SaveChangesAsync();
         }
     }
+}
+public class InterestRepository : IInterestRepository
+{
+    private readonly QueryDbContext _context;
+    public InterestRepository(QueryDbContext context)
+    {
+        _context = context;
+    }
+    public async Task<Interest?> GetByIdAsync(Guid id)
+    {
+        return await _context.Interests.FindAsync(id);
+    }
+
+
 }

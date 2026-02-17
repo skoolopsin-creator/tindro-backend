@@ -1,6 +1,7 @@
 ﻿﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Tindro.Api.Extensions;
 using Tindro.Application.Moderation.Dtos;
 using Tindro.Application.Moderation.Interfaces;
 
@@ -24,7 +25,8 @@ public class ModerationController : ControllerBase
     [ProducesResponseType(typeof(ReportDto), StatusCodes.Status201Created)]
     public async Task<IActionResult> ReportUser([FromBody] CreateReportRequestDto request)
     {
-        var reporterId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+       
+        var reporterId = User.GetUserId();
         var report = await _moderationService.CreateReportAsync(request, reporterId);
         return CreatedAtAction(nameof(GetReportById), new { reportId = report.Id }, report);
     }
@@ -61,7 +63,7 @@ public class ModerationController : ControllerBase
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     public async Task<IActionResult> ResolveReport(Guid reportId, [FromBody] ResolveReportRequestDto request)
     {
-        var adminId = Guid.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+        var adminId = User.GetUserId();
         await _moderationService.ResolveReportAsync(reportId, request, adminId);
         return NoContent();
     

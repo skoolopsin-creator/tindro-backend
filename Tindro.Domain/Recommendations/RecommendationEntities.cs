@@ -1,3 +1,6 @@
+using Tindro.Domain.Common;
+using Tindro.Domain.Users;
+
 namespace Tindro.Domain.Recommendations;
 
 public class UserPreferences
@@ -77,12 +80,15 @@ public class UserInterest
 {
     public Guid Id { get; set; }
     public Guid UserId { get; set; }
+    public Guid InterestId { get; set; }
 
-    public string InterestName { get; set; } = string.Empty;
-    public string Category { get; set; } = string.Empty; // "Sports", "Arts", "Technology", etc.
-    public int ConfidenceScore { get; set; } = 50; // 0-100 how strongly they like this
+
+    public int ConfidenceScore { get; set; } = 50;
 
     public DateTime AddedAt { get; set; } = DateTime.UtcNow;
+
+    public User User { get; set; }
+    public Interest Interest { get; set; }
 }
 
 public class SkipProfile

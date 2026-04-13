@@ -114,7 +114,7 @@ try
 catch (Exception ex)
 {
     Console.WriteLine($"DB init failed: {ex}");
-    throw;
+   
 }
 
 

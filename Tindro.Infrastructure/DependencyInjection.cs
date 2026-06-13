@@ -36,10 +36,16 @@ namespace Tindro.Infrastructure
             // ------------------------
             // DATABASES
             // ------------------------
-          var commandConn =
-    "Host=dpg-d6062aqqcgvc73a6v69g-a;Port=5432;Database=tindro_db;Username=tindro_db_user;Password=EY6FVwBXaQP2Wq8xJhdIei2lt7h2bUju";
+    var commandConn =
+    config.GetConnectionString("CommandDb")
+    ?? throw new Exception("CommandDb connection string missing");
 
-var queryConn = commandConn;
+var queryConn =
+    config.GetConnectionString("QueryDb")
+    ?? throw new Exception("QueryDb connection string missing");
+
+Console.WriteLine($"CommandDb => {commandConn}");
+Console.WriteLine($"QueryDb => {queryConn}");
 
 services.AddDbContext<CommandDbContext>(options =>
     options.UseNpgsql(commandConn));

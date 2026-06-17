@@ -39,7 +39,10 @@ public IActionResult SaveProfile([FromBody] CreateProfileDto dto)
         }
 
         profile.Name = dto.Name;
-        profile.DateOfBirth = dto.DateOfBirth;
+        profile.DateOfBirth = DateTime.SpecifyKind(
+    dto.DateOfBirth,
+    DateTimeKind.Utc
+);
         profile.Gender = dto.Gender;
         profile.Bio = dto.Bio;
         profile.MinAgePreference = dto.MinAgePreference;

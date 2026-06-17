@@ -11,9 +11,9 @@ using Tindro.Api.Extensions;
 [Route("api/users")]
 public class UsersController : ControllerBase
 {
-    private readonly AppDbContext _db;
+    private readonly CommandDbContext _db;
 
-    public UsersController(AppDbContext db)
+    public UsersController(CommandDbContext db)
     {
         _db = db;
     }

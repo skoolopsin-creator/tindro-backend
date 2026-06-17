@@ -22,8 +22,12 @@ public class UsersController : ControllerBase
     [HttpPost("profile")]
     public IActionResult SaveProfile(CreateProfileDto dto)
     {
-        var userId = User.GetUserId();
+        try
+        {
 
+ var userId = User.GetUserId();
+         Console.WriteLine($"UserId => {userId}");
+        Console.WriteLine($"DOB => {dto.DateOfBirth}");
         var profile = _db.Profiles.FirstOrDefault(x => x.UserId == userId);
 
         if (profile == null)
@@ -49,6 +53,13 @@ public class UsersController : ControllerBase
         _db.SaveChanges();
 
         return Ok(profile);
+        }
+        catch (Exception ex)
+        {
+         Console.WriteLine(ex.ToString());
+        return StatusCode(500, ex.ToString());
+        }
+       
     }
 
   

@@ -106,17 +106,16 @@ public IActionResult Refresh([FromBody] string refreshToken)
         .FirstOrDefault(x => x.Token == refreshToken);
 
     if (token == null || token.IsRevoked || token.ExpiresAt < DateTime.UtcNow)
-        return Unauthorized("Invalid refresh token");
+        return Unauthorized();
 
     var user = _db.Users.Find(token.UserId);
-    if (user == null)
-        return Unauthorized();
 
     var newAccessToken = _jwt.GenerateToken(user);
 
     return Ok(new
     {
-        accessToken = newAccessToken
+        accessToken = newAccessToken,
+        refreshToken = refreshToken
     });
 }
 

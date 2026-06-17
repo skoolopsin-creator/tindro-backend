@@ -20,14 +20,12 @@ public class UsersController : ControllerBase
 
     // Create or update profile
     [HttpPost("profile")]
-    public IActionResult SaveProfile(CreateProfileDto dto)
+public IActionResult SaveProfile([FromBody] CreateProfileDto dto)
+{
+    try
     {
-        try
-        {
+        var userId = User.GetUserId();
 
- var userId = User.GetUserId();
-         Console.WriteLine($"UserId => {userId}");
-        Console.WriteLine($"DOB => {dto.DateOfBirth}");
         var profile = _db.Profiles.FirstOrDefault(x => x.UserId == userId);
 
         if (profile == null)
@@ -53,14 +51,17 @@ public class UsersController : ControllerBase
         _db.SaveChanges();
 
         return Ok(profile);
-        }
-        catch (Exception ex)
-        {
-         Console.WriteLine(ex.ToString());
-        return StatusCode(500, ex.ToString());
-        }
-       
     }
+    catch (Exception ex)
+    {
+        return StatusCode(500, new
+        {
+            message = ex.Message,
+            inner = ex.InnerException?.Message,
+            stack = ex.StackTrace
+        });
+    }
+}
 
   
 }

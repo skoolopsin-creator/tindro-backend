@@ -125,7 +125,7 @@ services.AddDbContext<QueryDbContext>(options =>
             services.AddScoped<IRecommendationService, RecommendationService>();
             services.AddScoped<IPreferenceMatchingService, PreferenceMatchingService>();
             services.AddScoped<IInterestMatchingService, InterestMatchingService>();
-            Services.AddScoped<IInterestRepository, InterestRepository>();
+            services.AddScoped<IInterestRepository, InterestRepository>();
             services.AddScoped<IProfileScoreService, ProfileScoreService>();
 
             // ------------------------

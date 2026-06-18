@@ -4831,6 +4831,7 @@
     "net8.0": [
       "FirebaseAdmin >= 3.0.0",
       "Google.Apis.Auth >= 1.70.0",
+      "MediatR >= 13.1.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.0",
       "Microsoft.AspNetCore.SignalR >= 1.2.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.8",
@@ -4907,6 +4908,10 @@
           "Google.Apis.Auth": {
             "target": "Package",
             "version": "[1.70.0, )"
+          },
+          "MediatR": {
+            "target": "Package",
+            "version": "[13.1.0, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",

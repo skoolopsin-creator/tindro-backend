@@ -9,11 +9,18 @@ using System.Text;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.AspNetCore.HttpOverrides;
+using MediatR;
+using Tindro.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 builder.Services.AddInfrastructure(builder.Configuration);
+
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(AssemblyReference).Assembly);
+});
 
 var jwtKey = builder.Configuration["Jwt:Key"];
 var jwtIssuer = builder.Configuration["Jwt:Issuer"];

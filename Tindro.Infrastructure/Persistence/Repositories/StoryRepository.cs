@@ -84,10 +84,10 @@ public class StoryRepository : IStoryRepository
         var expiryTime = DateTime.UtcNow.AddHours(-24);
 
         return await _context.Stories
-            .Where(s => s.UserId != userId && 
-                        !s.IsDeleted && 
-                        s.CreatedAt > expiryTime &&
-                        (s.VisibilityType == "everyone" || s.IsPublic))
+            .Where(s =>
+            !s.IsDeleted &&
+            s.CreatedAt > expiryTime &&
+            (s.VisibilityType == "everyone" || s.IsPublic || s.UserId == userId))
             .OrderByDescending(s => s.CreatedAt)
             .Skip(skip)
             .Take(pageSize)

@@ -53,21 +53,37 @@ public async Task<IActionResult> FirebaseLogin([FromBody] FirebaseAuthRequest re
             x.FirebaseUid == firebaseUid || x.Phone == phone);
 
         if (user == null)
-        {
-            user = new User
-            {
-                Id = Guid.NewGuid(),
-                FirebaseUid = firebaseUid,
-                Phone = phone,
-                IsVerified = true,
-                IsShadowBanned = false,
-                CreatedAt = DateTime.UtcNow,
-                LastActive = DateTime.UtcNow
-            };
+{
+    user = new User
+    {
+        Id = Guid.NewGuid(),
+        FirebaseUid = firebaseUid,
+        Phone = phone,
+        IsVerified = true,
+        IsShadowBanned = false,
+        CreatedAt = DateTime.UtcNow,
+        LastActive = DateTime.UtcNow
+    };
 
-            _db.Users.Add(user);
-            _db.SaveChanges();
-        }
+    _db.Users.Add(user);
+
+    _db.Profiles.Add(new Profile
+    {
+        Id = Guid.NewGuid(),
+        UserId = user.Id,
+        Name = "",
+        Bio = "",
+        Gender = "",
+        DateOfBirth = DateTime.UtcNow,
+        MinAgePreference = 18,
+        MaxAgePreference = 35,
+        GenderPreference = "",
+        Education = "",
+        IncomeRange = ""
+    });
+
+    _db.SaveChanges();
+}
 
         var accessToken = _jwt.GenerateToken(user);
 

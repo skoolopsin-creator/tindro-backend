@@ -77,11 +77,16 @@ var feed = _db.Users
        
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreatePostCommand command)
-        {
-            var post = await _mediator.Send(command);
-            return Ok(post);
-        }
+public async Task<IActionResult> Create(CreatePostCommand command)
+{
+    var userId = User.GetUserId();
+
+    var post = await _mediator.Send(
+        command with { UserId = userId } // if keeping UserId
+    );
+
+    return Ok(post);
+}
 
         [HttpGet("{postId}")]
         public async Task<IActionResult> Get(Guid postId)
@@ -129,5 +134,34 @@ var feed = _db.Users
     }
 
 
+        [HttpGet("myposts")]
+public IActionResult GetMyPosts()
+{
+    var userId = User.GetUserId();
 
+    var posts = _db.Posts
+        .Where(x => x.UserId == userId)
+        .OrderByDescending(x => x.CreatedAt)
+        .Select(x => new
+        {
+            x.Id,
+            x.UserId,
+            x.Content,
+            x.MediaUrl,
+            x.LikeCount,
+            x.CreatedAt
+        })
+        .ToList();
+
+    return Ok(posts);
+}
+[HttpGet("posts")]
+public IActionResult GetPosts()
+{
+    var posts = _db.Posts
+        .OrderByDescending(x => x.CreatedAt)
+        .ToList();
+
+    return Ok(posts);
+}
 }

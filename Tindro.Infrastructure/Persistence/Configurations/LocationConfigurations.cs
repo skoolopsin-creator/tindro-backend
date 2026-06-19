@@ -23,6 +23,13 @@ public class UserLocationConfiguration : IEntityTypeConfiguration<UserLocation>
 
         // TTL handling - delete at ExpiresAt
         builder.ToTable("user_locations", t => t.HasCheckConstraint("ck_expires_at", "\"ExpiresAt\" > \"UpdatedAt\""));
+            builder.HasOne(x => x.User)
+                .WithOne(x => x.Location)
+                .HasForeignKey<UserLocation>(x => x.UserId);
+
+            builder.HasOne(x => x.City)
+                .WithMany(x => x.UserLocations)
+                .HasForeignKey(x => x.CityId);
     }
 }
 

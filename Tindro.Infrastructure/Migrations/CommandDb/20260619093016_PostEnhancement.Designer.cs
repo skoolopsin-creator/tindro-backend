@@ -10,10 +10,10 @@ using Tindro.Infrastructure.Persistence;
 
 #nullable disable
 
-namespace Tindro.Infrastructure.Migrations
+namespace Tindro.Infrastructure.Migrations.CommandDb
 {
-    [DbContext(typeof(AppDbContext))]
-    [Migration("20260619072830_PostEnhancement")]
+    [DbContext(typeof(CommandDbContext))]
+    [Migration("20260619093016_PostEnhancement")]
     partial class PostEnhancement
     {
         /// <inheritdoc />

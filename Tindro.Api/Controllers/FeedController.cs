@@ -8,6 +8,7 @@ using Tindro.Application.Feed.Commands;
 using Tindro.Infrastructure.Persistence;
 using Tindro.Api.Extensions;
 using Tindro.Application.Feed.Dtos;
+using Microsoft.EntityFrameworkCore;
 
 [Authorize]
 [ApiController]
@@ -166,11 +167,34 @@ public async Task<IActionResult> Create(CreatePostCommand command)
                     .ToList();
         return Ok(posts);
     }
-    [HttpGet("posts")]
+  [HttpGet("posts")]
 public IActionResult GetPosts()
 {
     var posts = _db.Posts
+        .Include(x => x.User)
+            .ThenInclude(x => x.Profile)
+        .Include(x => x.User)
+            .ThenInclude(x => x.Location)
+                .ThenInclude(x => x.City)
         .OrderByDescending(x => x.CreatedAt)
+        .Select(x => new
+        {
+            x.Id,
+            x.UserId,
+            x.Title,
+            x.Description,
+            x.MediaUrl,
+            x.Tags,
+            x.LikeCount,
+            x.CommentCount,
+            x.ShareCount,
+            x.CreatedAt,
+
+            UserName = x.User.Profile.Name,
+            City = x.User.Location != null
+                ? x.User.Location.City.Name
+                : ""
+        })
         .ToList();
 
     return Ok(posts);

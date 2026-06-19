@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tindro.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34f0432f2e799fca2c1fb5818fdae4b321542140")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bee56a37d78bb79573b135a141c91f49da2d48dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tindro.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tindro.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

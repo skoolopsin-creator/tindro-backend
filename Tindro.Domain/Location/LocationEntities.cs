@@ -1,10 +1,13 @@
+
+using Tindro.Domain.Users;
+
 namespace Tindro.Domain.Location;
 
 public class UserLocation
 {
     public Guid Id { get; set; }
     public Guid UserId { get; set; }
-    
+    public User User { get; set; } = null!;
     /// <summary>
     /// Geohash for location (no raw GPS stored)
     /// </summary>
@@ -14,7 +17,7 @@ public class UserLocation
     /// City ID for fallback discovery
     /// </summary>
     public Guid CityId { get; set; }
-    
+    public City City { get; set; } = null!;
     /// <summary>
     /// Last update timestamp
     /// </summary>
@@ -89,4 +92,7 @@ public class City
     /// PostGIS Point geometry
     /// </summary>
     public string Location { get; set; } = null!; // WKT format: POINT(lon lat)
+
+        public ICollection<UserLocation> UserLocations { get; set; }
+        = new List<UserLocation>();
 }

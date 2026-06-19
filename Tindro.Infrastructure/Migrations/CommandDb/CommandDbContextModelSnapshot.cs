@@ -386,6 +386,35 @@ namespace Tindro.Infrastructure.Migrations.CommandDb
                     b.ToTable("VoiceNotes");
                 });
 
+            modelBuilder.Entity("Tindro.Domain.Common.Interest", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<string>("IconKey")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("interests", (string)null);
+                });
+
             modelBuilder.Entity("Tindro.Domain.Discovery.FilterApplicationHistory", b =>
                 {
                     b.Property<Guid>("Id")
@@ -648,17 +677,27 @@ namespace Tindro.Infrastructure.Migrations.CommandDb
                     b.Property<int>("CommentCount")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<int>("LikeCount")
                         .HasColumnType("integer");
 
                     b.Property<string>("MediaUrl")
+                        .HasColumnType("text");
+
+                    b.Property<int>("ShareCount")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Tags")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -1463,27 +1502,20 @@ namespace Tindro.Infrastructure.Migrations.CommandDb
                     b.Property<DateTime>("AddedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("Category")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
-
                     b.Property<int>("ConfidenceScore")
                         .HasColumnType("integer");
 
-                    b.Property<string>("InterestName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
+                    b.Property<Guid>("InterestId")
+                        .HasColumnType("uuid");
 
                     b.Property<Guid>("UserId")
                         .HasColumnType("uuid");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Category");
+                    b.HasIndex("InterestId");
 
-                    b.HasIndex("UserId", "InterestName")
+                    b.HasIndex("UserId", "InterestId")
                         .IsUnique();
 
                     b.ToTable("user_interests", (string)null);
@@ -2732,6 +2764,25 @@ namespace Tindro.Infrastructure.Migrations.CommandDb
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Tindro.Domain.Recommendations.UserInterest", b =>
+                {
+                    b.HasOne("Tindro.Domain.Common.Interest", "Interest")
+                        .WithMany("UserInterests")
+                        .HasForeignKey("InterestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Tindro.Domain.Users.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Interest");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Tindro.Domain.Stories.Story", b =>
                 {
                     b.HasOne("Tindro.Domain.Users.User", "User")
@@ -2966,6 +3017,11 @@ namespace Tindro.Infrastructure.Migrations.CommandDb
             modelBuilder.Entity("Tindro.Domain.Chat.MessageExtension", b =>
                 {
                     b.Navigation("ReadReceipts");
+                });
+
+            modelBuilder.Entity("Tindro.Domain.Common.Interest", b =>
+                {
+                    b.Navigation("UserInterests");
                 });
 
             modelBuilder.Entity("Tindro.Domain.Payments.SubscriptionPlan", b =>

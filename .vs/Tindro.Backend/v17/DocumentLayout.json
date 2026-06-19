@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A1560647-B893-4B8D-B2A5-67F787ED7B2B}|Tindro.Domain\\Tindro.Domain.csproj|c:\\users\\office\\source\\repos\\tindro.backend\\tindro.domain\\location\\locationentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1560647-B893-4B8D-B2A5-67F787ED7B2B}|Tindro.Domain\\Tindro.Domain.csproj|solutionrelative:tindro.domain\\location\\locationentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|c:\\users\\office\\source\\repos\\tindro.backend\\tindro.api\\controllers\\feedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|solutionrelative:tindro.api\\controllers\\feedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 118,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,36 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LocationEntities.cs",
+              "DocumentMoniker": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Domain\\Location\\LocationEntities.cs",
+              "RelativeDocumentMoniker": "Tindro.Domain\\Location\\LocationEntities.cs",
+              "ToolTip": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Domain\\Location\\LocationEntities.cs",
+              "RelativeToolTip": "Tindro.Domain\\Location\\LocationEntities.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T12:48:04.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FeedController.cs",
+              "DocumentMoniker": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\FeedController.cs",
+              "RelativeDocumentMoniker": "Tindro.Api\\Controllers\\FeedController.cs",
+              "ToolTip": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Controllers\\FeedController.cs",
+              "RelativeToolTip": "Tindro.Api\\Controllers\\FeedController.cs",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAkwMEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T12:45:57.261Z",
+              "EditorCaption": ""
             }
           ]
         }

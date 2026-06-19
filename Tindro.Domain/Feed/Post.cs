@@ -1,5 +1,5 @@
 ﻿using Tindro.Domain.Common;
-
+using Tindro.Domain.Users;
 namespace Tindro.Domain.Feed;
 
 
@@ -8,6 +8,8 @@ public class Post : AuditableEntity
     public Guid Id { get; private set; } = Guid.NewGuid();
 
     public Guid UserId { get; private set; }
+
+    public User User { get; set; } = null!;
 
     public string Title { get; private set; } = null!;
 

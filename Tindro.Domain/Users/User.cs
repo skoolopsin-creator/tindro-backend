@@ -1,4 +1,6 @@
 ﻿using Tindro.Domain.Common;
+using Tindro.Domain.Feed;
+using Tindro.Domain.Location;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Tindro.Domain.Users;
@@ -11,7 +13,9 @@ public class User : AuditableEntity
     public bool IsVerified { get; set; }
 
     public Profile Profile { get; set; } = null!;
+public UserLocation? Location { get; set; }
 
+public ICollection<Post> Posts { get; set; } = new List<Post>();
     public bool IsShadowBanned { get; set; }
 
     public DateTime LastActive { get; set; } = DateTime.UtcNow;

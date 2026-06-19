@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tindro.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a084ad65498976936c77c6cae3adc8921f77368b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34f0432f2e799fca2c1fb5818fdae4b321542140")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tindro.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tindro.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

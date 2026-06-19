@@ -7,6 +7,7 @@ using Tindro.Application.Feed.Commands.Comments;
 using Tindro.Application.Feed.Commands;
 using Tindro.Infrastructure.Persistence;
 using Tindro.Api.Extensions;
+using Tindro.Application.Feed.Dtos;
 
 [Authorize]
 [ApiController]
@@ -134,28 +135,38 @@ public async Task<IActionResult> Create(CreatePostCommand command)
     }
 
 
-        [HttpGet("myposts")]
-public IActionResult GetMyPosts()
-{
-    var userId = User.GetUserId();
+    [HttpGet("myposts")]
+    public IActionResult GetMyPosts()
+    {
+        var userId = User.GetUserId();
 
-    var posts = _db.Posts
-        .Where(x => x.UserId == userId)
-        .OrderByDescending(x => x.CreatedAt)
-        .Select(x => new
-        {
-            x.Id,
-            x.UserId,
-            x.Content,
-            x.MediaUrl,
-            x.LikeCount,
-            x.CreatedAt
-        })
-        .ToList();
+        var posts = _db.Posts
+                    .Where(x => x.UserId == userId)
+                    .OrderByDescending(x => x.CreatedAt)
+                    .ToList() // <-- ye add karo
+                    .Select(x => new PostDto
+                    {
+                        Id = x.Id,
+                        UserId = x.UserId,
+                        Title = x.Title,
+                        Description = x.Description,
 
-    return Ok(posts);
-}
-[HttpGet("posts")]
+                        Tags = string.IsNullOrWhiteSpace(x.Tags)
+                            ? new List<string>()
+                            : x.Tags.Split(',', StringSplitOptions.RemoveEmptyEntries)
+                                    .Select(t => t.Trim())
+                                    .ToList(),
+
+                        MediaUrl = x.MediaUrl,
+                        LikeCount = x.LikeCount,
+                        CommentCount = x.CommentCount,
+                        ShareCount = x.ShareCount,
+                        CreatedAt = x.CreatedAt
+                    })
+                    .ToList();
+        return Ok(posts);
+    }
+    [HttpGet("posts")]
 public IActionResult GetPosts()
 {
     var posts = _db.Posts

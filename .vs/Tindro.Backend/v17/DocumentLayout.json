@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|c:\\users\\office\\source\\repos\\tindro.backend\\tindro.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADD8296F-FF5C-4FB3-BEC3-64BAE3B7CAFD}|Tindro.Api\\Tindro.Api.csproj|solutionrelative:tindro.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 118,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,23 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Tindro.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Office\\source\\repos\\Tindro.Backend\\Tindro.Api\\Program.cs",
-              "RelativeToolTip": "Tindro.Api\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACwAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T19:24:27.829Z",
-              "EditorCaption": ""
             }
           ]
         }

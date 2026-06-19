@@ -1,4 +1,10 @@
 ﻿using MediatR;
 using Tindro.Application.Feed.Dtos;
 
-public record CreatePostCommand(string Content, string? MediaUrl, Guid UserId) : IRequest<PostDto>;
+public record CreatePostCommand(
+    string Title,
+    string Description,
+    string? MediaUrl,
+     List<string>? Tags,
+    Guid UserId
+) : IRequest<PostDto>;
